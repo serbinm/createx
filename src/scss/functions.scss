@@ -1,0 +1,47 @@
+// #region черновик
+// @function size-768($min, $max) {
+//   $diff: $max - $min / 2;
+//   @return calc(#{$min / 2 + px} + $diff * ((100vw - 375px) / 768) * 2); // * 2.048 ? так как 768 / 375
+// }
+// $divide-768: 2;
+// $divide-1230: 1.6;
+
+// @function size-1230($min, $max) {
+//   // $min = minimum, $max = maximum
+//   $diff: $max - $min;
+//   @return calc(#{$min + px} + $diff * ((100vw - 768px) / 1230) * 2); // *1.6 ? 
+// }
+
+
+// @function size-768($min, $max, $viewport-max, $viewport-min) {
+//   $diff: $max - $min;
+//   @return calc(#{$min + px} + $diff * ((100vw - #{$viewport-min + px}) / $viewport-max) * 2);
+// }
+
+// #endregion
+
+@function size-768($max, $num: 2) {
+  $min: calc($max / $num);
+  $diff: $max - $min;
+  @return calc(#{$min + px} + $diff * ((100vw - 375px) / 768) * 1.955); // * 2.048 ? так как 768 / 375
+}
+
+@function size-1230($max, $num: 1.6) {
+  $min: calc($max / $num);
+  $diff: $max - $min;
+  @return calc(#{$min + px} + $diff * ((100vw - 768px) / 1230) * 2.4589); // *1.6 ? 
+};
+
+@function padding-768($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  @return size-768($top) size-768($right) size-768($bottom) size-768($left);
+};
+
+@function padding-1230($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  @return size-1230($top) size-1230($right) size-1230($bottom) size-1230($left);
+}
+
+@function size-custom($min, $max, $container-size, $viewport-min) {
+  // $min = minimum, $max = maximum
+  $diff: $max - $min;
+  @return calc(#{$min + px} + $diff * ((100vw - #{$viewport-min + px}) / #{$container-size + px}) * 2);
+}
