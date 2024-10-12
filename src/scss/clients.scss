@@ -1,0 +1,136 @@
+.clients {
+  padding: 188px 0 121px;
+  background-color: $gray--200;
+
+  @media (max-width: 768px) {
+    padding: padding-768(188, 0, 121, 0);
+  }
+
+  &__wrapper {
+    @media (max-width: 1080px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: $gray--900;
+
+    @media (max-width: 768px) {
+      font-size: size-768(46);
+    }
+  }
+
+  &__profile {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-top: 63px;
+
+    @media (max-width: 768px) {
+      margin-top: size-768(60);
+    }
+  }
+
+  &__comments {
+    width: 600px;
+    position: relative;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      padding: 10px;
+      // background-color: #d7dadd54;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 23px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(16, 1.4);
+      line-height: size-768(26, 1.4);
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    color: $gray--900;
+    font-weight: 700;
+    margin-top: 28px;
+  }
+
+  &__position {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: -15px;
+    right: -11px;
+    display: flex;
+    // gap: 10px;
+    z-index: 10;
+
+    @media (max-width: 768px) {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 15px 17px;
+    background-color: inherit;
+
+    &--prev {
+      background-image: url("@img/icons/arrow--left.svg");
+    }
+
+    &--next {
+      background-image: url("@img/icons/arrow--right.svg");
+    }
+
+    &:hover {
+      background-color: $gray--400;
+    }
+  }
+
+  &__image {
+    width: 495px;
+    height: 550px;
+    position: absolute;
+    top: -57px;
+    right: 0;
+
+    @media(max-width: 1230px) {
+      width: size-1230(495);
+      height: size-1230(550);
+    }
+
+    @media(max-width: 1080px) {
+      display: none;
+    }
+  }
+}
