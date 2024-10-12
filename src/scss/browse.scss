@@ -1,6 +1,11 @@
 @import "functions";
 
 .browse {
+  padding-bottom: 120px;
+
+  @media (max-width: 768px) {
+    padding-bottom: size-768(120);
+  }
 
   &__wrapper {
     display: flex;
@@ -99,15 +104,24 @@
   }
 
   &-explore {
-    align-self: center;
     display: flex;
+    align-self: center;
     align-items: center;
     margin-top: 80px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 
     &__title {
       font-size: 26px;
       font-weight: 700;
       color: $gray--900;
+      letter-spacing: 1px;
+
+      // @media (max-width: 768px) {
+      //   font-size: size-768(26);
+      // }
     }
 
     &__link {
