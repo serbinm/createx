@@ -1,0 +1,131 @@
+@import "functions";
+
+.browse {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: $gray--900;
+    line-height: 60px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(44);
+      line-height: size-768(60);
+    }
+  }
+
+  &__album {
+    display: flex;
+    gap: 30px;
+    margin-top: 58px;
+    overflow-x: scroll;
+  }
+
+  &__item {
+    width: 390px;
+    height: 440px;
+    position: relative;
+  }
+
+  &__image {
+    height: 345px;
+  }
+
+  &__item {
+    height: 440px;
+    background-color: #fff;
+    box-shadow: 0px 40px 135px -2px rgba(30, 33, 44, 0.2);
+
+    &:hover .browse__description {
+      height: 163px;
+      display: flex;
+    }
+
+    &:hover .browse__view {
+      display: flex;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 0 24px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  &__name {
+    font-size: 20px;
+    color: $gray--900;
+    font-weight: 700;
+  }
+
+  &__category {
+    font-size: 14px;
+    color: $gray--700;
+    margin-top: 10px;
+  }
+
+  &__view {
+    font-size: 14px;
+    color: $orange;
+    width: 172px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $orange;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-top: 26px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+
+    display: none;
+  }
+
+  &__explore {
+    display: flex;
+    gap: 40px;
+  }
+
+  &-explore {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+    &__title {
+      font-size: 26px;
+      font-weight: 700;
+      color: $gray--900;
+    }
+
+    &__link {
+      width: 224px;
+      height: 52px;
+      color: white;
+      background-color: $orange;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $orange--dark;
+      }
+    }
+  }
+}
