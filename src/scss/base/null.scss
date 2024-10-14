@@ -69,3 +69,37 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
+
+.body {
+  box-sizing: border-box;
+  min-width: 375px;
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1230px;
+  margin: 0 auto;
+
+  @media (max-width: 1270px) {
+    padding: 0 20px;
+  }
+
+  &__construction {
+    padding: 0 0;
+  }
+
+  &__pagination {
+    padding: 0 0;
+  }
+}
