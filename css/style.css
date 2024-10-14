@@ -984,8 +984,7 @@ h6 {
     padding: calc(94px + 94*(100vw - 375px)/ 768*1.955) calc(0px + 0*(100vw - 375px)/ 768*1.955) calc(60.5px + 60.5*(100vw - 375px)/ 768*1.955) calc(0px + 0*(100vw - 375px)/ 768*1.955)
   }
   .clients__title {
-    font-size: calc(23px + 23*(100vw - 375px)/ 768*1.955);
-    align-self: flex-start
+    font-size: calc(23px + 23*(100vw - 375px)/ 768*1.955)
   }
   .clients__profile {
     margin-top: calc(30px + 30*(100vw - 375px)/ 768*1.955)
