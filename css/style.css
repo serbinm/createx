@@ -364,7 +364,7 @@ h6 {
 .more {
   height: 243px
 }
-.more__wrapper {
+.more .wrapper.more__wrapper {
   background-color: #fff;
   padding: 48px 60px;
   height: 100%;
@@ -942,7 +942,7 @@ h6 {
     margin-top: calc(36.3636363636px + 3.6363636364*(100vw - 375px)/ 768*1.955);
     height: 48px
   }
-  .more__wrapper {
+  .more .wrapper.more__wrapper {
     padding: calc(24px + 24*(100vw - 375px)/ 768*1.955) calc(30px + 30*(100vw - 375px)/ 768*1.955) calc(24px + 24*(100vw - 375px)/ 768*1.955) calc(30px + 30*(100vw - 375px)/ 768*1.955)
   }
   .more__title {
