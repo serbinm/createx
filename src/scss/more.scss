@@ -6,8 +6,8 @@
   @media (max-width: 1000px) {
     height: auto;
   }
-
-  &__wrapper {
+// специфичность повысил
+  .wrapper.more__wrapper {
     background-color: white;
     padding: 48px 60px;
     height: 100%;
