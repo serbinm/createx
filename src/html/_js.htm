@@ -1,27 +1,9 @@
 <script src="js/app.min.js"></script>
 
-<!-- <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const burger = document.querySelector('.burger');
-    const pressButton = document.querySelector('.header__dropdown');
-    const unpressButton = document.querySelector('.burger__close');
-
-    pressButton.addEventListener('click', function () {
-      document.body.style.overflow = 'hidden';
-      burger.style.display = 'block';
-    });
-
-    unpressButton.addEventListener('click', function () {
-      document.body.style.overflow = 'auto';
-      burger.style.display = 'none';
-    });
-  });
-</script> -->
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-construction', {
     slidesPerView: 1,
     centeredSlides: true,
     // Optional parameters
@@ -39,8 +21,8 @@
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-construction__next',
+      prevEl: '.swiper-construction__prev',
     },
 
     // If we need pagination
@@ -49,7 +31,7 @@
     // },
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-construction__pagination',
       clickable: true,
       renderBullet: function (index, className) {
         // Рендерим цифры вместо точек
@@ -59,7 +41,8 @@
   });
 </script>
 
-<script>
+
+<!-- <script>
   const swiperBrowse = new Swiper('.swiper__browse', {
     slidesPerView: 1,
     centeredSlides: true,
@@ -87,7 +70,7 @@
     //   el: '.swiper-pagination',
     // },
   });
-</script>
+</script> -->
 
 
 <!-- #region accordion -->

@@ -30,15 +30,25 @@
   $min: calc($max / $num);
   $diff: $max - $min;
   @return calc(#{$min + px} + $diff * ((100vw - 768px) / 1230) * 2.4589); // *1.6 ? 
-};
+}
+
+;
 
 @function padding-768($top: 0, $right: 0, $bottom: 0, $left: 0) {
   @return size-768($top) size-768($right) size-768($bottom) size-768($left);
-};
+}
+
+;
 
 @function padding-1230($top: 0, $right: 0, $bottom: 0, $left: 0) {
   @return size-1230($top) size-1230($right) size-1230($bottom) size-1230($left);
 }
+
+@function padding-768-num($top: 0, $right: 0, $bottom: 0, $left: 0, $num: 2) {
+  @return size-768($top, $num) size-768($right, $num) size-768($bottom, $num) size-768($left, $num);
+}
+
+;
 
 @function size-custom($min, $max, $container-size, $viewport-min) {
   // $min = minimum, $max = maximum
