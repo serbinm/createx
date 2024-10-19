@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- меняю местами -->
-	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241018155002"> -->
+	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241019051005"> -->
 
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -15,15 +15,15 @@
 	<!-- #region Ubuntu font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241018155002" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241019051005" rel="stylesheet">
 	<!-- #endregion -->
 
 	<!-- #region Swiper -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241018155002" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241019051005" />
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241018155002"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241019051005"></script>
 	<!-- #endregion -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241018155002">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241019051005">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -72,11 +72,11 @@
 	</header>
 	<main class="page">
 		<section class="construction container">
-			<div class="swiper">
+			<div class="swiper swiper-construction">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper wrapper">
 					<!-- Slides -->
-					<div class="swiper-slide">
+					<div class="swiper-slide swiper-construction__slide">
 						<div class="swiper-item construction__info">
 							<div class="wrapper wrapper__construction">
 								<h1 class="construction__title">create<span class="construction__title--orange">x</span></h1>
@@ -91,7 +91,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide swiper-construction__slide">
 						<div class="swiper-item construction__info">
 							<div class="wrapper wrapper__construction">
 								<h1 class="construction__title">create<span class="construction__title--orange">x</span></h1>
@@ -106,7 +106,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide swiper-construction__slide">
 						<div class="swiper-item construction__info">
 							<div class="wrapper wrapper__construction">
 								<h1 class="construction__title">create<span class="construction__title--orange">x</span></h1>
@@ -121,7 +121,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide swiper-construction__slide">
 						<div class="swiper-item construction__info">
 							<div class="wrapper wrapper__construction">
 								<h1 class="construction__title">create<span class="construction__title--orange">x</span></h1>
@@ -137,12 +137,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper__buttons wrapper__construction">
-					<div class="swiper-button-prev swiper__button"></div>
-					<div class="swiper-button-next swiper__button"></div>
+				<div class="swiper__buttons wrapper__construction swiper-construction__buttons">
+					<div class="swiper-button-prev swiper-construction__button swiper-construction__prev"></div>
+					<div class="swiper-button-next swiper-construction__button swiper-construction__next"></div>
 				</div>
 				<!-- If we need pagination -->
-				<div class="swiper-pagination wrapper__pagination"></div>
+				<div class="swiper-pagination wrapper__pagination swiper-construction__pagination"></div>
 
 				<!-- If we need navigation buttons -->
 				<!-- <div class="swiper__buttons">
@@ -331,7 +331,45 @@
 
 			</div>
 		</section>
-		<section class="facts"></section>
+		<section class="facts container">
+			<div class="wrapper facts__wrapper">
+				<h2 class="facts__title">Some facts and figures</h2>
+				<div class="facts__list">
+					<div class="facts__item">
+						<div class="facts__circle facts__circle--orange">
+							<span class="facts__number">
+								98%
+							</span>
+						</div>
+						<span class="facts__description">Totally satisfied clients</span>
+					</div>
+					<div class="facts__item">
+						<div class="facts__circle facts__circle--red">
+							<span class="facts__number">
+								20
+							</span>
+						</div>
+						<span class="facts__description">Years of experience</span>
+					</div>
+					<div class="facts__item">
+						<div class="facts__circle facts__circle--blue">
+							<span class="facts__number">
+								9452
+							</span>
+						</div>
+						<span class="facts__description">Working hours spent</span>
+					</div>
+					<div class="facts__item">
+						<div class="facts__circle facts__circle--green">
+							<span class="facts__number">
+								100%
+							</span>
+						</div>
+						<span class="facts__description">Succeeded projects</span>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="news container">
 			<div class="wrapper news__wrapper">
 				<h2 class="news__title">Recent news</h2>
@@ -543,30 +581,12 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20241018155002"></script>
+	<script src="js/app.min.js?_v=20241019051005"></script>
 
-	<!-- <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const burger = document.querySelector('.burger');
-    const pressButton = document.querySelector('.header__dropdown');
-    const unpressButton = document.querySelector('.burger__close');
-
-    pressButton.addEventListener('click', function () {
-      document.body.style.overflow = 'hidden';
-      burger.style.display = 'block';
-    });
-
-    unpressButton.addEventListener('click', function () {
-      document.body.style.overflow = 'auto';
-      burger.style.display = 'none';
-    });
-  });
-</script> -->
-
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241018155002"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241019051005"></script>
 
 	<script>
-		const swiper = new Swiper('.swiper', {
+		const swiper = new Swiper('.swiper-construction', {
 			slidesPerView: 1,
 			centeredSlides: true,
 			// Optional parameters
@@ -584,8 +604,8 @@
 
 			// Navigation arrows
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-construction__next',
+				prevEl: '.swiper-construction__prev',
 			},
 
 			// If we need pagination
@@ -594,7 +614,7 @@
 			// },
 
 			pagination: {
-				el: '.swiper-pagination',
+				el: '.swiper-construction__pagination',
 				clickable: true,
 				renderBullet: function(index, className) {
 					// Рендерим цифры вместо точек
@@ -604,35 +624,36 @@
 		});
 	</script>
 
-	<script>
-		const swiperBrowse = new Swiper('.swiper__browse', {
-			slidesPerView: 1,
-			centeredSlides: true,
-			// Optional parameters
-			// slidesPerGroup: 2,
-			// initialSlide: 1,
-			// slidesPerView: 2,
-			// spaceBetween: 70,
-			// loop: true,
-			// grabCursor: true,
 
-			// centeredSlides: true,
-			// initialSlide: 1,
+	<!-- <script>
+  const swiperBrowse = new Swiper('.swiper__browse', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    // Optional parameters
+    // slidesPerGroup: 2,
+    // initialSlide: 1,
+    // slidesPerView: 2,
+    // spaceBetween: 70,
+    // loop: true,
+    // grabCursor: true,
+
+    // centeredSlides: true,
+    // initialSlide: 1,
 
 
 
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper__browse-button-next',
-				prevEl: '.swiper__browse-button-prev',
-			},
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper__browse-button-next',
+      prevEl: '.swiper__browse-button-prev',
+    },
 
-			// If we need pagination
-			// pagination: {
-			//   el: '.swiper-pagination',
-			// },
-		});
-	</script>
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+  });
+</script> -->
 
 
 	<!-- #region accordion -->
