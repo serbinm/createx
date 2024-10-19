@@ -160,6 +160,13 @@
 
   &-about,
   &-experiences {
+    &__link:hover {
+      color: $orange
+    }
+  }
+
+  &-about,
+  &-experiences {
     display: flex;
     flex-direction: column;
     gap: 20px;
