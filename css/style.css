@@ -552,34 +552,22 @@ h6 {
 .browse {
   padding-bottom: 120px
 }
-.browse__wrapper {
-  display: flex;
-  flex-direction: column
-}
 .browse__title {
   font-size: 46px;
   font-weight: 700;
   color: #1e212c;
   line-height: 60px
 }
-.browse__album {
-  display: flex;
-  gap: 30px;
-  margin-top: 58px;
-  overflow-x: scroll
-}
-.browse__item {
-  width: 390px;
-  height: 440px;
-  position: relative
-}
 .browse__image {
-  height: 345px
+  width: 100%;
+  height: 345px;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .browse__item {
   height: 440px;
   background-color: #fff;
-  box-shadow: 0 40px 135px -2px rgba(30,33,44,.2)
+  box-shadow: 0 19px 14px 3px rgba(30,33,44,.2)
 }
 .browse__item:hover .browse__description {
   height: 163px;
@@ -631,9 +619,9 @@ h6 {
 }
 .browse-explore {
   display: flex;
-  align-self: center;
   align-items: center;
-  margin-top: 80px
+  margin-top: 80px;
+  justify-content: center
 }
 .browse-explore__title {
   font-size: 26px;
@@ -656,6 +644,12 @@ h6 {
 }
 .browse-explore__link:hover {
   background-color: #fc3300
+}
+.swiper-browse {
+  margin-top: 58px
+}
+.swiper-browse__slide {
+  height: 440px
 }
 .partners {
   background-color: #f4f5f6;
@@ -1133,6 +1127,10 @@ h6 {
 }
 .footer-address__white {
   color: #fff
+}
+.footer-about__link:hover,
+.footer-experiences__link:hover {
+  color: #ff5a30
 }
 .footer-about,
 .footer-experiences {
