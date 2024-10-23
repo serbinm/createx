@@ -5,25 +5,22 @@
 	<title>Ceramex Home</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- меняю местами -->
-	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241019092834"> -->
-
+	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241023145108"> -->
 	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
 
 	<!-- #region Ubuntu font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241019092834" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241023145108" rel="stylesheet">
 	<!-- #endregion -->
 
 	<!-- #region Swiper -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241019092834" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241023145108" />
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241019092834"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241023145108"></script>
 	<!-- #endregion -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241019092834">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241023145108">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -32,7 +29,7 @@
 	<header class="header container" id="header">
 		<div class="wrapper">
 			<nav class="header__nav">
-				<a href="" class="header__logo">
+				<a href="../index.html" class="header__logo">
 					<img src="img/header/header__logo.svg" alt="">
 				</a>
 				<ul class="header__list">
@@ -40,7 +37,7 @@
 						<a href="" class="header__link">About Us</a>
 					</li>
 					<li class="header__item">
-						<a href="" class="header__link">Services</a>
+						<a href="../services.html" class="header__link">Services</a>
 					</li>
 					<li class="header__item">
 						<a href="" class="header__link">Work</a>
@@ -244,8 +241,14 @@
 		</section>
 		<section class="browse container">
 			<div class="wrapper browse__wrapper">
-				<h2 class="browse__title">Browse our selected projects<br>and learn more about our work</bc>
-				</h2>
+				<div class="browse__top">
+					<h2 class="browse__title">Browse our selected projects<br>and learn more about our work</bc>
+					</h2>
+					<div class="browse__nav">
+						<div class="swiper-browse__button swiper-browse__prev swiper-button-prev"></div>
+						<div class="swiper-browse__button swiper-browse__next swiper-button-next"></div>
+					</div>
+				</div>
 
 				<div class="swiper swiper-browse">
 					<div class="swiper-wrapper swiper-browse__wrapper">
@@ -600,10 +603,9 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/app.min.js?_v=20241023145108"></script>
 
-	<script src="js/app.min.js?_v=20241019092834"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241019092834"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241023145108"></script>
 
 	<script>
 		const swiperConstruction = new Swiper('.swiper-construction', {
@@ -673,13 +675,13 @@
 					slidesPerView: 3,
 					spaceBetween: 30,
 				}
-			}
+			},
 			// Navigation arrows
 
-			// navigation: {
-			//   nextEl: '.swiper-browse__next',
-			//   prevEl: '.swiper-browse__prev',
-			// },
+			navigation: {
+				nextEl: '.swiper-browse__next',
+				prevEl: '.swiper-browse__prev',
+			},
 
 			// If we need pagination
 			// pagination: {
