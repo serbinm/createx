@@ -52,11 +52,11 @@ $gray--200: #F4F5F6;
 @import "bureau";
 @import "values";
 @import "more";
-@import "services";
 @import "browse";
 @import "partners";
 @import "clients";
 @import "figures";
+@import "services";
 @import "facts";
 @import "news";
 @import "details";
@@ -64,4 +64,6 @@ $gray--200: #F4F5F6;
 
 
 // Підключення стилів окремих сторінок
-@import "home";
+// @import "services";
+@import "services-top";
+@import "services-list";

@@ -1,0 +1,73 @@
+.services-top {
+  background-image: url("@img/services/services-top__background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 180px;
+  background-position-x: 0;
+
+  @media (max-width: 1270px) {
+    background-position-x: -500px;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: size-768(180);
+    background-position-x: -360px;
+  }
+
+  &__route {
+    margin-top: 61px;
+
+    @media (max-width: 768px) {
+      margin-top: size-768(61);
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: $gray--800;
+
+  }
+
+  &__span {
+    font-size: 14px;
+    color: $gray--600;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $gray--900;
+    font-size: 72px;
+    text-align: left;
+    margin-top: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(72);
+      margin-top: size-768(48);
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: $gray--700;
+    text-align: left;
+    margin-top: 24px;
+    max-width: 600px;
+    margin-top: 30px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(20);
+      margin-top: size-768(24);
+      line-height: size-768(30);
+    }
+  }
+
+  // background-size: cover;
+}
