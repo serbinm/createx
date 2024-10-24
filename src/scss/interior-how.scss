@@ -1,0 +1,213 @@
+.interior-how {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: $gray--900;
+    letter-spacing: -0.2px;
+
+    @media (max-width: 1230px) {
+      font-size: size-1230(46);
+    }
+
+    @media (max-width: 768px) {
+      font-size: size-768(46, 1.5);
+      align-self: center;
+    }
+  }
+
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 71px;
+
+    @media (max-width: 1230px) {
+      margin-top: size-1230(71);
+    }
+
+    @media (max-width: 1230px) {
+      margin-top: size-1230(71);
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: size-768(71, 1.2);
+      gap: 10px;
+    }
+
+    &-item {
+      width: 285px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 768px) {
+        flex-direction: row;
+        width: 320px;
+      }
+
+      &__circle {
+        position: absolute;
+        display: none;
+        height: 116px;
+        width: 116px;
+        position: absolute;
+        left: -32px;
+        top: -32px;
+
+        @media (max-width: 1230px) {
+          width: size-1230(116);
+          height: size-1230(116);
+          left: calc(size-1230(32) * -1);
+          top: calc(size-1230(32) * -1);
+        }
+
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &::after {
+          display: block;
+        }
+      }
+
+      &:hover .timeline-item__number {
+        color: $orange;
+
+        @media (max-width: 768px) {
+          color: $gray--400;
+        }
+      }
+
+      &:hover .timeline-item__circle {
+        display: block;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      &__top {
+        display: flex;
+        gap: 23px;
+
+        @media (max-width: 1230px) {
+          gap: size-1230(23);
+        }
+
+        @media (max-width: 1230px) {
+          gap: size-1230(23);
+        }
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 0;
+          border-bottom: 1px dashed #D7DADD;
+          /* margin-top: 30px; */
+          padding-top: 25px;
+
+          @media (max-width: 1230px) {
+            padding-top: size-1230(25);
+          }
+
+          @media (max-width: 768px) {
+            padding-top: size-768(25);
+            height: 100px;
+            width: 1px;
+            padding-top: 0;
+            // padding-left: 25px;
+            margin-left: 20px;
+            border-top: 0;
+            border: 1px dashed $gray--600;
+          }
+        }
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 768px) {
+          padding-left: 15px;
+        }
+      }
+
+      &__number {
+        font-size: 46px;
+        color: $gray--400;
+        font-weight: 700;
+        display: block;
+        position: relative;
+
+        // background-image: url("@img/interior/interior__number-background.png");
+        // background-repeat: no-repeat;
+
+        @media (max-width: 1230px) {
+          font-size: size-1230(46);
+        }
+
+        @media (max-width: 768px) {
+          font-size: size-768(46, 1);
+        }
+
+      }
+
+      &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $gray--900;
+        margin-top: 22px;
+
+        @media (max-width: 1230px) {
+          font-size: size-1230(20);
+        }
+
+        @media (max-width: 768px) {
+          font-size: 25px;
+          margin-top: 20px;
+        }
+      }
+
+      &__text {
+        font-size: 16px;
+        color: $gray--700;
+        line-height: 26px;
+        margin-top: 11px;
+        text-align: left;
+
+        @media (max-width: 1230px) {
+          font-size: size-1230(16);
+          line-height: size-1230(26);
+        }
+
+        @media (max-width: 768px) {
+          font-size: size-768(16, 1);
+          line-height: size-768(26, 1);
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+.timeline-item:last-of-type .timeline-item__top::after{
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
