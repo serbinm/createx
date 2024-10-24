@@ -116,3 +116,25 @@
   }
 </script>
 <!-- #endregion -->
+
+<!-- #region interior accordion -->
+<script>
+  var acc = document.getElementsByClassName("interior-accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("interior-active");
+      var panel = this.nextElementSibling;
+      // console.log(this.nextElementSibling);
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        // icon.style.display = "none";
+      } else {
+        panel.style.display = "block";
+        // icon.style.display = "block";
+      }
+    });
+  }
+</script>
+<!-- #endregion -->
