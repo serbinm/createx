@@ -1,9 +1,11 @@
 .partners {
   background-color: $gray--200;
-  padding-top: 84px;
+  padding-top: 124px;
+  padding-bottom: 123px;
 
   @media (max-width: 768px) {
-    padding-top: size-768(84);
+    padding-top: size-768(124);
+    padding-bottom: size-768(123);
   }
 
   &__wrapper {
