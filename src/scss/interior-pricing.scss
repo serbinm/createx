@@ -1,0 +1,130 @@
+.interior-pricing {
+  background-color: $gray--200;
+  overflow: scroll;
+  &__wrapper {
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 85px;
+
+    @media (max-width: 950px) {
+      overflow-x: auto;
+    }
+  }
+
+  &__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: $gray--900;
+    text-align: center;
+    display: block;
+  }
+
+  &__description {
+    font-size: 18px;
+    color: $gray--700;
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+  }
+
+  .pricing-table {
+    display: block;
+    width: 100%;
+    border: 1px solid $gray--600;
+    margin-top: 64px;
+    border-radius: 4px;
+    padding-top: 14px;
+    padding-bottom: 31px;
+    border-spacing: 0;
+
+    @media (max-width: 1000px) {
+      // width: 950px;
+      min-width: 950px;
+      // max-width: 950px;
+    }
+
+    &__link {
+      display: flex;
+      margin: 0 auto;
+      width: 143px;
+      height: 36px;
+      text-transform: uppercase;
+      color: $orange;
+      border: 1px solid $orange;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    &__name {
+      &--text {
+        padding-left: 23px;
+      }
+    }
+
+    &__row {
+      height: 58px;
+      padding: 15px 0;
+      text-align: center;
+      // display: block;
+    }
+
+    &__row:nth-child(even) {
+      background-color: $gray-300;
+    }
+
+    &__header {
+      height: 105px;
+    }
+
+    &__data,
+    &__name {
+      font-size: 16px;
+      color: $gray--800;
+      font-weight: 400;
+    }
+
+    &__name--bold {
+      color: $gray--800;
+      font-weight: 700;
+      font-size: 18px;
+      padding-top: 36px;
+      padding-bottom: 10px;
+    }
+
+    &__title {
+      color: $gray--900;
+      font-size: 24px;
+      font-weight: 700;
+      width: 245px;
+    }
+
+    &__price {
+      font-size: 18px;
+      color: $gray--700;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  tr th:first-child {
+    width: 495px;
+    text-align: left;
+  }
+
+  tr,
+  td,
+  th {
+    border-color: $gray--400;
+    // box-sizing: border-box;
+  }
+
+  table {
+    box-sizing: border-box;
+  }
+}
