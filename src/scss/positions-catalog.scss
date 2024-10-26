@@ -1,0 +1,207 @@
+.positions-catalog {
+  &__wrapper {
+    padding-top: 119px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: size-768(119);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 705px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      gap: size-768(24, 1.5)
+    }
+  }
+
+  .catalog-item {
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $gray--400;
+    border-radius: 4px;
+    padding: 31px 39px;
+
+    @media (max-width: 768px) {
+      height: size-768(124, 1.5);
+      padding-top: size-768(31);
+      padding-bottom: size-768(31);
+      padding-left: size-768(39);
+      padding-right: size-768(39);
+    }
+
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 14px;
+      color: $gray--700;
+
+      @media (max-width: 768px) {
+        font-size: size-768(14, 1.5);
+      }
+
+    }
+
+    &__data {
+      display: flex;
+      gap: 10px;
+      height: 20px;
+
+      @media (max-width: 768px) {
+        gap: size-768(10, 1.5);
+        height: size-768(20, 1.5);
+      }
+    }
+
+    &__position {
+      font-size: 20px;
+      color: $gray--900;
+      font-weight: 700;
+      margin-top: 7px;
+
+      @media (max-width: 768px) {
+        font-size: size-768(20, 1.5);
+        margin-top: size-768(7, 1.5);
+      }
+    }
+
+    &__location,
+    &__schedule {
+      padding-left: 24px;
+
+      @media (max-width: 768px) {
+        padding-left: size-768(24, 1.5);
+      }
+    }
+
+    &__location {
+      background-image: url("@img/positions/positions__pin.svg");
+      background-repeat: no-repeat;
+
+      @media (max-width: 768px) {
+        background-size: size-768(12, 1.5) size-768(15, 1.5);
+      }
+    }
+
+    &__schedule {
+      background-image: url("@img/positions/positions__clock.svg");
+      background-repeat: no-repeat;
+
+      @media (max-width: 768px) {
+        background-size: size-768(12, 1.5) size-768(15, 1.5);
+      }
+    }
+
+    &__apply {
+      width: 151px;
+      height: 44px;
+      text-transform: uppercase;
+      color: $orange;
+      border: 1px solid $orange;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      letter-spacing: 0.5px;
+
+      @media (max-width: 768px) {
+        width: size-768(151, 1.5);
+        height: size-768(44, 1.5);
+        font-size: size-768(14, 1.5);
+        margin-top: size-768(26);
+      }
+    }
+  }
+
+  .catalog-question {
+    display: flex;
+    flex-direction: column;
+    width: 383px;
+    margin-right: 7px;
+
+    @media (max-width: 768px) {
+      width: size-768(383, 1.5);
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 48px;
+      gap: 24px;
+
+      @media (max-width: 768px) {
+        gap: size-768(24, 1.5);
+        margin-top: size-768(48, 1.5);
+      }
+    }
+
+    &__title {
+      font-size: 28px;
+      font-weight: 700;
+      color: $gray--900;
+      line-height: 42px;
+
+      @media (max-width: 768px) {
+        font-size: size-768(28, 1.5);
+        line-height: size-768(42, 1.5);
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      color: $gray--800;
+      line-height: 27px;
+      margin-top: 24px;
+
+      @media (max-width: 768px) {
+        font-size: size-768(18, 1.5);
+        line-height: size-768(27, 1.5);
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $orange;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      color: $orange;
+      width: 180px;
+      height: 52px;
+      letter-spacing: 0.5px;
+
+      @media (max-width: 768px) {
+        width: size-768(180, 1.5);
+        height: size-768(52, 1.5);
+        font-size: size-768(16, 1.5);
+        margin-top: size-768(8, 1.5);
+      }
+
+      &--send {
+        color: #fff;
+        background-color: $orange;
+      }
+    }
+  }
+}
