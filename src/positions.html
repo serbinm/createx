@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.htm',{
-"title":"Available positions"
+"title":"Our work"
 })
 
 <body>
-  @@include('html/positions/_positions-top.htm',{})
+  @@include('html/work/_work-top.htm',{})
   <main class="page">
+    @@include('html/work/_work-projects.htm',{})
+    @@include('html/_clients.htm', {})
+    @@include('html/_partners.htm', {})
     @@include('html/_details.htm', {})
   </main>
   @@include('html/_footer.htm',{})

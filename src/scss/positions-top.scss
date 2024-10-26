@@ -1,0 +1,73 @@
+.positions-top {
+  background-color: $gray--200;
+  background-image: url("@img/positions/positions-top__bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 98%;
+
+  @media (max-width: 1160px) {
+    background-position-x: 300px;
+  }
+
+
+  @media (max-width: 768px) {
+    background-position-x: 200px;
+  }
+
+  @media (max-width: 500px) {
+    background-position-x: 0px;
+  }
+
+  &__wrapper {
+    padding-top: 64px;
+    padding-bottom: 150px;
+
+    @media (max-width: 768px) {
+      padding-top: size-768(64);
+      padding-bottom: size-768(150);
+    }
+  }
+
+  &__route {
+    font-size: 14px;
+    color: $gray--800;
+    display: flex;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(14, 1.5);
+    }
+  }
+
+  &__span {
+    color: $gray--600;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 94px;
+    text-transform: uppercase;
+    color: $gray--900;
+    margin-top: 42px;
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(72, 1.5);
+      line-height: size-768(94, 1.5);
+      margin-top: size-768(42, 1.5);
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $gray--700;
+    display: block;
+    margin-top: 26px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(20, 1.5);
+      margin-top: size-768(26, 1.5);
+    }
+  }
+}
