@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/_head.htm',{
-"title":"Available positions"
+@@include('html/modules/_head.htm',{
+"title":"Ceramex Home"
 })
 
 <body>
-  @@include('html/positions/_positions-top.htm',{})
+
+  @@include('html/modules/_header.htm',{})
   <main class="page">
-    @@include('html/positions/_positions-catalog.htm',{})
-    @@include('html/_details.htm', {})
+    @@include('html/home/_construction.htm', {})
+    @@include('html/home/_bureau.htm', {})
+    @@include('html/home/_values.htm', {})
+    @@include('html/home/_more.htm', {})
+    @@include('html/home/_services.htm', {})
+    @@include('html/home/_browse.htm', {})
+    @@include('html/modules/_partners.htm', {})
+    @@include('html/modules/_clients.htm', {})
+    @@include('html/home/_facts.htm', {})
+    @@include('html/home/_news.htm', {})
+    @@include('html/modules/_details.htm', {})
   </main>
-  @@include('html/_footer.htm',{})
-  @@include('html/_js.htm',{})
+  @@include('html/modules/_footer.htm',{})
+  @@include('html/modules/_js.htm',{})
 </body>
 
 </html>

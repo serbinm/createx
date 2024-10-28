@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"Services"
-	})
-	<body>
-			<main class="page">
-        @@include('html/services/_services-top.htm',{})
-        @@include('html/services/_services-list.htm',{})
-        @@include('html/_details.htm',{})
-			</main>
-			@@include('html/_footer.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/modules/_head.htm',{
+"title":"Services"
+})
+
+<body>
+  <main class="page">
+    @@include('html/services/_services-top.htm',{})
+    @@include('html/services/_services-list.htm',{})
+    @@include('html/modules/_details.htm',{})
+  </main>
+  @@include('html/modules/_footer.htm',{})
+  @@include('html/modules/_js.htm',{})
+</body>
+
 </html>
