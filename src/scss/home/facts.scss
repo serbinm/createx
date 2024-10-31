@@ -34,7 +34,7 @@
     color: $gray--900;
 
     @media (max-width: 768px) {
-      font-size: size-768(46);
+      font-size: size-768(46, 1.5);
     }
   }
 

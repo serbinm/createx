@@ -1,4 +1,3 @@
-@import "functions";
 
 .browse {
   padding-bottom: 120px;
@@ -6,6 +5,8 @@
   @media (max-width: 768px) {
     padding-bottom: size-768(120);
   }
+
+
 
   &__wrapper {
     // display: flex;
@@ -19,8 +20,10 @@
     line-height: 60px;
 
     @media (max-width: 768px) {
-      font-size: size-768(44);
+      font-size: size-768(46);
       line-height: size-768(60);
+      text-align: center;
+      align-self: center;
     }
   }
 
@@ -155,6 +158,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .browse__nav {
@@ -194,7 +202,7 @@
 
 .swiper-browse__button.swiper-browse__prev,
 .swiper-browse__button.swiper-browse__next {
-  
+
   &:hover {
     background-color: $orange;
   }

@@ -47,40 +47,40 @@ $gray--200: #F4F5F6;
 @import "base/null";
 
 // Підключення стилів окремих блоків
-@import "header";
-@import "construction";
-@import "bureau";
-@import "values";
-@import "more";
-@import "browse";
-@import "partners";
-@import "clients";
-@import "figures";
-@import "services";
-@import "facts";
-@import "news";
-@import "details";
-@import "footer";
+@import "modules/header";
+@import "home/construction";
+@import "home/bureau";
+@import "home/values";
+@import "home/more";
+@import "home/browse";
+@import "modules/partners";
+@import "modules/clients";
+@import "home/figures";
+@import "home/services";
+@import "home/facts";
+@import "home/news";
+@import "modules/details";
+@import "modules/footer";
 
 
 // Підключення стилів окремих сторінок
 // @import "services";
-@import "services-top";
-@import "services-list";
+@import "services/services-top";
+@import "services/services-list";
 
 // interior design
-@import "interior-top";
-@import "interior-offer";
-@import "interior-how";
-@import "interior-benefits";
-@import "interior-projects";
-@import "interior-pricing";
+@import "interior/interior-top";
+@import "interior/interior-offer";
+@import "interior/interior-how";
+@import "interior/interior-benefits";
+@import "interior/interior-projects";
+@import "interior/interior-pricing";
 
 // our work style
-@import "work-top.scss";
-@import "work-projects.scss";
+@import "work/work-top.scss";
+@import "work/work-projects.scss";
 
 // positions style
-@import "positions-top.scss";
-@import "positions-catalog.scss";
-@import "positions-benefits.scss";
+@import "positions/positions-top.scss";
+@import "positions/positions-catalog.scss";
+@import "positions/positions-benefits.scss";

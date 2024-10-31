@@ -1,16 +1,22 @@
 .clients {
-  padding: 188px 0 121px;
+  // padding: 188px 0 121px;
   background-color: $gray--200;
 
-  @media (max-width: 768px) {
-    padding: padding-768(188, 0, 121, 0);
-  }
+
 
   &__wrapper {
+    padding-top: 188px;
+    padding-bottom: 121px;
+
     @media (max-width: 1080px) {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: size-768(188);
+      padding-bottom: size-768(121);
     }
   }
 
@@ -24,7 +30,7 @@
     color: $gray--900;
 
     @media (max-width: 768px) {
-      font-size: size-768(46);
+      font-size: size-768(46, 1.5);
     }
   }
 
