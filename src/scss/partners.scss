@@ -1,17 +1,21 @@
 .partners {
   background-color: $gray--200;
-  padding-top: 124px;
-  padding-bottom: 123px;
-
-  @media (max-width: 768px) {
-    padding-top: size-768(124);
-    padding-bottom: size-768(123);
-  }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .padding--partners {
+    padding-top: 83px;
+    padding-bottom: 0px;
+
+
+    @media (max-width: 768px) {
+      padding-top: size-768(124);
+      padding-bottom: size-768(123);
+    }
   }
 
   &__title {

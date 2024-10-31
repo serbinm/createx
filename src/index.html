@@ -6,15 +6,20 @@
 
 <body>
 
-  @@include('html/modules/_header.htm',{})
+  @@include('html/modules/_header.htm',{
+    "className": "padding--header"
+  })
   <main class="page">
     @@include('html/home/_construction.htm', {})
+    @@include('html/home/_we.htm', {})
     @@include('html/home/_bureau.htm', {})
     @@include('html/home/_values.htm', {})
     @@include('html/home/_more.htm', {})
     @@include('html/home/_services.htm', {})
     @@include('html/home/_browse.htm', {})
-    @@include('html/modules/_partners.htm', {})
+    @@include('html/modules/_partners.htm', {
+      "className": "padding--partners"
+    })
     @@include('html/modules/_clients.htm', {})
     @@include('html/home/_facts.htm', {})
     @@include('html/home/_news.htm', {})
