@@ -274,8 +274,83 @@ h6 {
   font-weight: 700;
   opacity: 1
 }
-.bureau {
-  height: 975px
+.bureau__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 125px;
+  padding-bottom: 185px
+}
+.bureau__title {
+  font-size: 46px;
+  color: #1e212c;
+  font-weight: 700;
+  align-self: center;
+  text-align: center
+}
+.bureau__text {
+  font-size: 18px;
+  color: #787a80;
+  align-self: center;
+  text-align: center;
+  margin-top: 30px
+}
+.bureau__video {
+  margin-top: 62px
+}
+.bureau .video-container {
+  position: relative;
+  height: 500px
+}
+.bureau .video-container__icon {
+  width: 21px;
+  height: 22px
+}
+.bureau .video-container__content {
+  display: none;
+  width: 100%;
+  height: 100%
+}
+.bureau .video-container__placeholder {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bureau/bureau__bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative
+}
+.bureau .video-container__placeholder::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 10;
+  opacity: .6
+}
+.bureau .video-container__iframe {
+  width: 100%;
+  height: 500px
+}
+.bureau .video-container__button {
+  width: 80px;
+  height: 80px;
+  background-color: #ff5a30;
+  border-radius: 50%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4px
+}
+.bureau .video-container__button:hover {
+  background-color: #fc3300
 }
 .values__wrapper {
   display: flex;
@@ -291,7 +366,8 @@ h6 {
 .values__description {
   font-size: 18px;
   margin-top: 30px;
-  text-align: center
+  text-align: center;
+  color: #787a80
 }
 .values__list {
   margin-top: 63px;
@@ -560,14 +636,20 @@ h6 {
   background-image: url(../img/icons/arrow--right.svg)
 }
 .partners {
-  background-color: #f4f5f6;
-  padding-top: 124px;
-  padding-bottom: 123px
+  background-color: #f4f5f6
 }
 .partners__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center
+}
+.partners.padding--partners {
+  padding-top: 83px;
+  padding-bottom: 0
+}
+.partners.padding--interior {
+  padding-top: 123px;
+  padding-bottom: 125px
 }
 .partners__title {
   font-size: 46px;
@@ -586,8 +668,11 @@ h6 {
   height: 64px
 }
 .clients {
-  padding: 188px 0 121px;
   background-color: #f4f5f6
+}
+.clients__wrapper {
+  padding-top: 188px;
+  padding-bottom: 121px
 }
 .clients__container {
   position: relative
@@ -661,13 +746,13 @@ h6 {
 .services {
   background-image: url(../img/home-services/services__background.webp);
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 202px 0
+  background-size: cover
 }
 .services__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  padding: 202px 0
 }
 .services__title {
   font-size: 46px;
@@ -1087,6 +1172,13 @@ h6 {
 }
 .footer-social {
   width: 493px
+}
+.footer-social__icon {
+  color: #fff
+}
+.footer-social__icon:hover path {
+  fill: #ff5a30;
+  opacity: 1
 }
 .footer-social__top {
   display: flex;
@@ -2067,6 +2159,13 @@ h6 {
   .swiper-construction__pagination {
     margin-top: calc(59.6666666667px + 119.3333333333*(100vw - 768px)/ 1230*2.4589)
   }
+  .bureau__wrapper {
+    padding-top: calc(78.125px + 46.875*(100vw - 768px)/ 1230*2.4589);
+    padding-bottom: calc(115.625px + 69.375*(100vw - 768px)/ 1230*2.4589)
+  }
+  .bureau .video-container {
+    height: calc(312.5px + 187.5*(100vw - 768px)/ 1230*2.4589)
+  }
   .clients__image {
     width: calc(309.375px + 185.625*(100vw - 768px)/ 1230*2.4589);
     height: calc(343.75px + 206.25*(100vw - 768px)/ 1230*2.4589)
@@ -2377,6 +2476,37 @@ h6 {
   .swiper-construction .swiper-pagination-bullet {
     font-size: calc(14px + 14*(100vw - 375px)/ 768*1.955)
   }
+  .bureau__wrapper {
+    padding-top: calc(62.5px + 62.5*(100vw - 375px)/ 768*1.955);
+    padding-bottom: calc(92.5px + 92.5*(100vw - 375px)/ 768*1.955)
+  }
+  .bureau__title {
+    font-size: calc(30.6666666667px + 15.3333333333*(100vw - 375px)/ 768*1.955)
+  }
+  .bureau__text {
+    font-size: calc(16.3636363636px + 1.6363636364*(100vw - 375px)/ 768*1.955);
+    margin-top: calc(20px + 10*(100vw - 375px)/ 768*1.955)
+  }
+  .bureau__video {
+    margin-top: calc(41.3333333333px + 20.6666666667*(100vw - 375px)/ 768*1.955)
+  }
+  .bureau .video-container {
+    height: 320px
+  }
+  .bureau .video-container__placeholder {
+    background-position-x: 50%
+  }
+  .values__title {
+    font-size: calc(30.6666666667px + 15.3333333333*(100vw - 375px)/ 768*1.955)
+  }
+  .values__description {
+    font-size: calc(16.3636363636px + 1.6363636364*(100vw - 375px)/ 768*1.955);
+    margin-top: calc(20px + 10*(100vw - 375px)/ 768*1.955);
+    line-height: 27px
+  }
+  .more {
+    padding: 0 20px
+  }
   .more .wrapper.more__wrapper {
     padding: calc(24px + 24*(100vw - 375px)/ 768*1.955) calc(30px + 30*(100vw - 375px)/ 768*1.955) calc(24px + 24*(100vw - 375px)/ 768*1.955) calc(30px + 30*(100vw - 375px)/ 768*1.955)
   }
@@ -2387,24 +2517,35 @@ h6 {
     padding-bottom: calc(60px + 60*(100vw - 375px)/ 768*1.955)
   }
   .browse__title {
-    font-size: calc(22px + 22*(100vw - 375px)/ 768*1.955);
-    line-height: calc(30px + 30*(100vw - 375px)/ 768*1.955)
+    font-size: calc(23px + 23*(100vw - 375px)/ 768*1.955);
+    line-height: calc(30px + 30*(100vw - 375px)/ 768*1.955);
+    text-align: center;
+    align-self: center
   }
   .browse-explore {
     flex-direction: column
   }
-  .partners {
+  .browse__top {
+    align-items: center;
+    justify-content: center
+  }
+  .partners.padding--partners {
     padding-top: calc(62px + 62*(100vw - 375px)/ 768*1.955);
     padding-bottom: calc(61.5px + 61.5*(100vw - 375px)/ 768*1.955)
+  }
+  .partners.padding--interior {
+    padding-top: calc(61.5px + 61.5*(100vw - 375px)/ 768*1.955);
+    padding-bottom: calc(62.5px + 62.5*(100vw - 375px)/ 768*1.955)
   }
   .partners__title {
     font-size: calc(26px + 26*(100vw - 375px)/ 768*1.955)
   }
-  .clients {
-    padding: calc(94px + 94*(100vw - 375px)/ 768*1.955) calc(0px + 0*(100vw - 375px)/ 768*1.955) calc(60.5px + 60.5*(100vw - 375px)/ 768*1.955) calc(0px + 0*(100vw - 375px)/ 768*1.955)
+  .clients__wrapper {
+    padding-top: calc(94px + 94*(100vw - 375px)/ 768*1.955);
+    padding-bottom: calc(60.5px + 60.5*(100vw - 375px)/ 768*1.955)
   }
   .clients__title {
-    font-size: calc(23px + 23*(100vw - 375px)/ 768*1.955)
+    font-size: calc(30.6666666667px + 15.3333333333*(100vw - 375px)/ 768*1.955)
   }
   .clients__profile {
     margin-top: calc(30px + 30*(100vw - 375px)/ 768*1.955)
@@ -2423,6 +2564,18 @@ h6 {
     bottom: 0;
     right: 0
   }
+  .services__wrapper {
+    padding-top: calc(252.5px + -50.5*(100vw - 375px)/ 768*1.955);
+    padding-bottom: calc(101px + 101*(100vw - 375px)/ 768*1.955)
+  }
+  .services__title {
+    font-size: calc(30.6666666667px + 15.3333333333*(100vw - 375px)/ 768*1.955)
+  }
+  .services__description {
+    font-size: calc(16.3636363636px + 1.6363636364*(100vw - 375px)/ 768*1.955);
+    margin-top: calc(15px + 15*(100vw - 375px)/ 768*1.955);
+    line-height: 22,1.1
+  }
   .services__list {
     display: flex;
     flex-direction: column;
@@ -2434,10 +2587,16 @@ h6 {
     height: 285px
   }
   .services__learn {
-    flex-direction: column
+    flex-direction: column;
+    gap: calc(20px + 20*(100vw - 375px)/ 768*1.955)
   }
   .services__label {
-    text-align: center
+    text-align: center;
+    font-size: calc(18.6666666667px + 9.3333333333*(100vw - 375px)/ 768*1.955)
+  }
+  .services__link {
+    text-align: center;
+    font-size: calc(14.5454545455px + 1.4545454545*(100vw - 375px)/ 768*1.955)
   }
   .facts {
     padding: calc(93px + 93*(100vw - 375px)/ 768*1.955) calc(0px + 0*(100vw - 375px)/ 768*1.955) calc(61.5px + 61.5*(100vw - 375px)/ 768*1.955) calc(0px + 0*(100vw - 375px)/ 768*1.955)
@@ -2448,7 +2607,7 @@ h6 {
     padding-top: calc(31.5px + 31.5*(100vw - 375px)/ 768*1.955)
   }
   .facts__title {
-    font-size: calc(23px + 23*(100vw - 375px)/ 768*1.955)
+    font-size: calc(30.6666666667px + 15.3333333333*(100vw - 375px)/ 768*1.955)
   }
   .facts__item {
     width: calc(74px + 74*(100vw - 375px)/ 768*1.955)
