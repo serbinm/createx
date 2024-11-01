@@ -18,6 +18,16 @@
     }
   }
 
+  &.padding--interior {
+    padding-top: 123px;
+    padding-bottom: 125px;
+
+    @media (max-width: 768px) {
+      padding-top: size-768(123);
+      padding-bottom: size-768(125);
+    }
+  }
+
   &__title {
     font-size: 46px;
     font-weight: 700;

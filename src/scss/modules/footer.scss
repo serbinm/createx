@@ -46,6 +46,17 @@
   &-social {
     width: 493px;
 
+    &__icon {
+      color: white;
+
+      &:hover {
+        path {
+          fill: $orange;
+          opacity: 1;
+        }
+      }
+    }
+
     @media (max-width: 1050px) {
       width: 100%;
     }
