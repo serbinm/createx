@@ -28,6 +28,17 @@
     }
   }
 
+  &.padding--work {
+    background-color: white;
+    padding-top: 182px;
+    padding-bottom: 124px;
+
+    @media (max-width: 768px) {
+      padding-top: size-768(124);
+      padding-bottom: size-768(124);
+    }
+  }
+
   &__title {
     font-size: 46px;
     font-weight: 700;

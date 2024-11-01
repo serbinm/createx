@@ -1,9 +1,15 @@
 .work-projects {
   &__wrapper {
     padding-top: 59px;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
+    padding-top: 199px;
+    padding-bottom: 97px;
+
+    @media (max-width: 1230px) {
+      padding-top: size-1230(199);
+      padding-bottom: size-1230(97);
+    }
   }
 
   &__list {
@@ -14,11 +20,15 @@
     @media (max-width: 1000px) {
       grid-template-columns: 1fr 1fr;
     }
+
+    @media (max-width: 768px) {
+      gap: size-768(30);
+    }
   }
 
   .projects-item {
     max-width: 390px;
-    box-shadow: 0px 10px 26px 0px $gray--600;
+    box-shadow: 0px 6px 14px -4px #9A9CA5;
 
     @media (max-width: 1000px) {
       max-width: 100%;
@@ -91,5 +101,6 @@
     align-self: center;
     height: 26px;
     margin-top: 66px;
+    background-color: inherit
   }
 }

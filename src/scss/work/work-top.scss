@@ -1,32 +1,36 @@
 .work-top {
   background-image: url("@img/work/work-top__bg.png");
   background-repeat: no-repeat;
-  // background-size: cover;
+  // background-size: contain;
   background-position-x: 100%;
   background-color: $gray--200;
 
-  @media (max-width: 1230px) {
+  @media (max-width: 1260px) {
     background-position-x: 300px;
   }
 
   @media (max-width: 1000px) {
-    // background-position-x: 300px;
+    background-position-x: 500px;
   }
 
   @media (max-width: 768px) {
-    background-size: cover;
-    background-position-x: 0;
+    // background-size: cover;
+    background-position-x: 500px;
   }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 45px;
-    padding-bottom: 180px;
+    // padding-bottom: 180px;
+
+    @media (max-width: 1230px) {
+      padding-bottom: 0;
+    }
 
     @media (max-width: 768px) {
       padding-top: size-768(45);
-      padding-bottom: size-768(180);
+      padding-bottom: 20px;
     }
   }
 
@@ -82,22 +86,24 @@
     display: flex;
     gap: 20px;
     transform: translateY(120px);
+    padding-bottom: 40px;
+    overflow: auto;
 
-    @media (max-width: 1010px) {
-      flex-wrap: wrap;
-      justify-content: center;
+    @media (max-width: 1230px) {
       transform: translateY(0);
       margin-top: 50px;
+      padding-bottom: 20px;
     }
 
     @media (max-width: 768px) {
-      flex-wrap: wrap;
       transform: translateY(0);
       margin-top: size-768(50);
+
     }
   }
 
   &__item {
+    box-shadow: 0 1.75rem 1.875rem rgba(154, 156, 165, .08), 0 1.25rem 1rem rgba(154, 156, 165, .05), 0 .5rem .625rem rgba(154, 156, 165, .04), 0 .25rem .25rem rgba(30, 33, 44, .03);
     width: 230px;
     height: 154px;
     display: flex;
@@ -113,9 +119,17 @@
       background-color: $orange;
     }
 
+    min-width: 185px;
+
     @media (max-width: 768px) {
-      width: size-768(230, 1.5);
+      min-width: 170px;
+      // width: 154px;
+      height: 154px;
+      min-height: 120px;
+      padding-top: 32px;
       height: size-768(154, 1.5);
+      // height: size-768(230, 1.5);
+      width: size-768(230, 1.5);
       padding-top: size-768(32, 1.5);
     }
   }
@@ -129,8 +143,8 @@
       height: 48px;
 
       @media (max-width: 768px) {
-        width: size-768(48, 1.5);
-        height: size-768(48, 1.5);
+        width: size-768(48, 1.2);
+        height: size-768(48, 1.2);
       }
     }
 
@@ -140,8 +154,8 @@
       font-weight: 700;
 
       @media (max-width: 768px) {
-        margin-top: size-768(18, 1.5);
-        font-size: size-768(16, 1.5);
+        margin-top: size-768(18, 1.2);
+        font-size: size-768(16, 1.2);
       }
     }
   }
