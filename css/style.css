@@ -651,6 +651,11 @@ h6 {
   padding-top: 123px;
   padding-bottom: 125px
 }
+.partners.padding--work {
+  background-color: #fff;
+  padding-top: 182px;
+  padding-bottom: 124px
+}
 .partners__title {
   font-size: 46px;
   font-weight: 700;
@@ -668,11 +673,13 @@ h6 {
   height: 64px
 }
 .clients {
-  background-color: #f4f5f6
-}
-.clients__wrapper {
+  background-color: #f4f5f6;
   padding-top: 188px;
   padding-bottom: 121px
+}
+.clients.padding--work {
+  padding-top: 84px;
+  padding-bottom: 126px
 }
 .clients__container {
   position: relative
@@ -1809,8 +1816,7 @@ h6 {
 .work-top__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 45px;
-  padding-bottom: 180px
+  padding-top: 45px
 }
 .work-top__route {
   font-size: 14px;
@@ -1843,9 +1849,12 @@ h6 {
   display: flex;
   gap: 20px;
   -webkit-transform: translateY(120px);
-  transform: translateY(120px)
+  transform: translateY(120px);
+  padding-bottom: 40px;
+  overflow: auto
 }
 .work-top__item {
+  box-shadow: 0 1.75rem 1.875rem rgba(154,156,165,.08),0 1.25rem 1rem rgba(154,156,165,.05),0 .5rem .625rem rgba(154,156,165,.04),0 .25rem .25rem rgba(30,33,44,.03);
   width: 230px;
   height: 154px;
   display: flex;
@@ -1853,7 +1862,8 @@ h6 {
   align-items: center;
   background-color: #fff;
   color: #9a9ca5;
-  padding-top: 32px
+  padding-top: 32px;
+  min-width: 185px
 }
 .work-top__item:hover {
   color: #fff;
@@ -1863,7 +1873,10 @@ h6 {
   border-radius: 4px;
   padding-bottom: 20px
 }
-.work-top .top-item__icon {
+.work-top .top-item:hover .top-item__icon path {
+  fill: #fff
+}
+.work-top .top-item:hover__icon {
   width: 48px;
   height: 48px
 }
@@ -1873,10 +1886,10 @@ h6 {
   font-weight: 700
 }
 .work-projects__wrapper {
-  padding-top: 59px;
-  padding-bottom: 20px;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  padding-top: 199px;
+  padding-bottom: 97px
 }
 .work-projects__list {
   display: grid;
@@ -1885,7 +1898,7 @@ h6 {
 }
 .work-projects .projects-item {
   max-width: 390px;
-  box-shadow: 0 10px 26px 0 #9a9ca5
+  box-shadow: 0 6px 14px -4px #9a9ca5
 }
 .work-projects .projects-item__image {
   width: 100%
@@ -1933,7 +1946,8 @@ h6 {
   background-position: 0 0;
   align-self: center;
   height: 26px;
-  margin-top: 66px
+  margin-top: 66px;
+  background-color: inherit
 }
 .positions-top {
   background-color: #f4f5f6;
@@ -2122,6 +2136,11 @@ h6 {
     background-position-x: -500px
   }
 }
+@media (max-width:1260px) {
+  .work-top {
+    background-position-x: 300px
+  }
+}
 @media (max-width:1230px) {
   .construction {
     padding: calc(137.5px + 82.5*(100vw - 768px)/ 1230*2.4589) calc(0px + 0*(100vw - 768px)/ 1230*2.4589) calc(75px + 45*(100vw - 768px)/ 1230*2.4589) calc(0px + 0*(100vw - 768px)/ 1230*2.4589)
@@ -2254,8 +2273,18 @@ h6 {
     font-size: calc(10px + 6*(100vw - 768px)/ 1230*2.4589);
     line-height: calc(16.25px + 9.75*(100vw - 768px)/ 1230*2.4589)
   }
-  .work-top {
-    background-position-x: 300px
+  .work-top__wrapper {
+    padding-bottom: 0
+  }
+  .work-top__list {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    margin-top: 50px;
+    padding-bottom: 20px
+  }
+  .work-projects__wrapper {
+    padding-top: calc(124.375px + 74.625*(100vw - 768px)/ 1230*2.4589);
+    padding-bottom: calc(60.625px + 36.375*(100vw - 768px)/ 1230*2.4589)
   }
 }
 @media (max-width:1160px) {
@@ -2277,7 +2306,7 @@ h6 {
   }
 }
 @media (max-width:1080px) {
-  .clients__wrapper {
+  .clients {
     display: flex;
     flex-direction: column;
     align-items: center
@@ -2345,15 +2374,6 @@ h6 {
     margin-top: 20px
   }
 }
-@media (max-width:1010px) {
-  .work-top__list {
-    flex-wrap: wrap;
-    justify-content: center;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    margin-top: 50px
-  }
-}
 @media (max-width:1000px) {
   .more {
     height: auto
@@ -2389,6 +2409,9 @@ h6 {
   }
   .interior-pricing .pricing-table {
     min-width: 950px
+  }
+  .work-top {
+    background-position-x: 500px
   }
   .work-projects__list {
     grid-template-columns: 1fr 1fr
@@ -2537,12 +2560,20 @@ h6 {
     padding-top: calc(61.5px + 61.5*(100vw - 375px)/ 768*1.955);
     padding-bottom: calc(62.5px + 62.5*(100vw - 375px)/ 768*1.955)
   }
+  .partners.padding--work {
+    padding-top: calc(62px + 62*(100vw - 375px)/ 768*1.955);
+    padding-bottom: calc(62px + 62*(100vw - 375px)/ 768*1.955)
+  }
   .partners__title {
     font-size: calc(26px + 26*(100vw - 375px)/ 768*1.955)
   }
-  .clients__wrapper {
+  .clients {
     padding-top: calc(94px + 94*(100vw - 375px)/ 768*1.955);
     padding-bottom: calc(60.5px + 60.5*(100vw - 375px)/ 768*1.955)
+  }
+  .clients.padding--work {
+    padding-top: calc(42px + 42*(100vw - 375px)/ 768*1.955);
+    padding-bottom: calc(63px + 63*(100vw - 375px)/ 768*1.955)
   }
   .clients__title {
     font-size: calc(30.6666666667px + 15.3333333333*(100vw - 375px)/ 768*1.955)
@@ -2874,12 +2905,11 @@ h6 {
     margin-top: calc(8.3333333333px + 1.6666666667*(100vw - 375px)/ 768*1.955)
   }
   .work-top {
-    background-size: cover;
-    background-position-x: 0
+    background-position-x: 500px
   }
   .work-top__wrapper {
     padding-top: calc(22.5px + 22.5*(100vw - 375px)/ 768*1.955);
-    padding-bottom: calc(90px + 90*(100vw - 375px)/ 768*1.955)
+    padding-bottom: 20px
   }
   .work-top__route {
     font-size: calc(9.3333333333px + 4.6666666667*(100vw - 375px)/ 768*1.955)
@@ -2895,23 +2925,29 @@ h6 {
     max-width: calc(300px + 300*(100vw - 375px)/ 768*1.955)
   }
   .work-top__list {
-    flex-wrap: wrap;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     margin-top: calc(25px + 25*(100vw - 375px)/ 768*1.955)
   }
   .work-top__item {
-    width: calc(153.3333333333px + 76.6666666667*(100vw - 375px)/ 768*1.955);
+    min-width: 170px;
+    height: 154px;
+    min-height: 120px;
+    padding-top: 32px;
     height: calc(102.6666666667px + 51.3333333333*(100vw - 375px)/ 768*1.955);
+    width: calc(153.3333333333px + 76.6666666667*(100vw - 375px)/ 768*1.955);
     padding-top: calc(21.3333333333px + 10.6666666667*(100vw - 375px)/ 768*1.955)
   }
-  .work-top .top-item__icon {
-    width: calc(32px + 16*(100vw - 375px)/ 768*1.955);
-    height: calc(32px + 16*(100vw - 375px)/ 768*1.955)
+  .work-top .top-item:hover {
+    width: calc(40px + 8*(100vw - 375px)/ 768*1.955);
+    height: calc(40px + 8*(100vw - 375px)/ 768*1.955)
   }
   .work-top .top-item__name {
-    margin-top: calc(12px + 6*(100vw - 375px)/ 768*1.955);
-    font-size: calc(10.6666666667px + 5.3333333333*(100vw - 375px)/ 768*1.955)
+    margin-top: calc(15px + 3*(100vw - 375px)/ 768*1.955);
+    font-size: calc(13.3333333333px + 2.6666666667*(100vw - 375px)/ 768*1.955)
+  }
+  .work-projects__list {
+    gap: calc(15px + 15*(100vw - 375px)/ 768*1.955)
   }
   .work-projects .projects-item__description {
     padding-top: calc(10px + 10*(100vw - 375px)/ 768*1.955);
