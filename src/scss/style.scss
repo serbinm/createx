@@ -85,3 +85,9 @@ $gray--200: #F4F5F6;
 @import "positions/positions-top.scss";
 @import "positions/positions-catalog.scss";
 @import "positions/positions-benefits.scss";
+
+// contacts style
+@import "contacts/contacts-top.scss";
+@import "contacts/contacts-form.scss";
+@import "contacts/contacts-address.scss";
+@import "contacts/contacts-social.scss";

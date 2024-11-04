@@ -43,6 +43,10 @@
       padding-right: size-768(39);
     }
 
+    &:hover {
+      box-shadow: 0 1.75rem 1.875rem rgba(154, 156, 165, .08), 0 1.25rem 1rem rgba(154, 156, 165, .05), 0 .5rem .625rem rgba(154, 156, 165, .04), 0 .25rem .25rem rgba(30, 33, 44, .03) !important;
+    }
+
 
     &__info {
       display: flex;
