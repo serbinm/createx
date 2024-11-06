@@ -1,0 +1,49 @@
+.contacts-social {
+  background-color: $gray--200;
+
+  padding-bottom: 119px;
+
+  @media (max-width: 768px) {
+    padding-bottom: size-768(119);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 46px;
+    color: $gray--900;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+
+    @media (max-width: 768px) {
+      font-size: size-768(46);
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    path {
+      fill: $gray--700;
+    }
+
+    &:hover {
+      path {
+        fill: $orange--dark;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-self: center;
+    gap: 24px;
+    margin-top: 42px;
+  }
+}

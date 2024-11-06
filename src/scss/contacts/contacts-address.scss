@@ -1,11 +1,11 @@
 .contacts-address {
   background-color: $gray--200;
   padding-top: 85px;
-  padding-bottom: 120px;
+  padding-bottom: 116px;
 
   @media (max-width: 768px) {
     padding-top: size-768(85);
-    padding-bottom: size-768(120);
+    padding-bottom: size-768(116);
   }
 
   &__wrapper {
