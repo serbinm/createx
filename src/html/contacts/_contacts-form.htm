@@ -1,0 +1,81 @@
+<section class="contacts-contact container">
+  <div class="contacts-contact__wrapper wrapper">
+    <h2 class="contacts-contact__title">Contact us</h2>
+    <div class="contacts-contact__description">Please complete the form. Detailed information will help us to make a
+      tuned offer.</div>
+    <div class="contacts-contact__container">
+      <div class="contacts-contact__col--1 contacts-contact__col">
+        <img src="@img/contacts/contacts__contact--girl.jpg" alt="" class="contacts-contact__image">
+      </div>
+      <div class="contacts-contact__col--2 contacts-contact__col">
+        <form action="" class="contacts-form">
+          <div class="contacts-form__top">
+            <div class="contacts-form__left">
+              <div class="contacts-form__item">
+                <label for="name" class="contacts-form__label">Name*</label>
+                <input type="text" class="contacts-form__input" id="name" name="name" placeholder="Your name">
+              </div>
+              <div class="contacts-form__item">
+                <label for="phone" class="contacts-form__label">Phone*</label>
+                <input type="text" class="contacts-form__input" placeholder="Your phone number" name="phone" id="phone">
+              </div>
+              <div class="contacts-form__item">
+                <label for="" class="contacts-form__label">Email</label>
+                <input type="text" class="contacts-form__input" name="email" id="email"
+                  placeholder="Your working email">
+              </div>
+            </div>
+
+            <div class="contacts-form__right">
+              <div class="contacts-form__item">
+                <label for="" class="contacts-form__label">I am interested in</label>
+                <select type="text" class="contacts-form__input contacts-form__select" name="interest" id="interest">
+                  <option value="interior">Interior Design</option>
+                  <option value="interior">Construction works</option>
+                  <option value="interior">Repairs</option>
+                  <option value="interior">Other</option>
+                </select>
+              </div>
+              <div class="contacts-form__item">
+                <label for="" class="contacts-form__label">Location*</label>
+                <select type="text" class="contacts-form__input contacts-form__select" name="location" id="location">
+                  <option value="interior">New York</option>
+                  <option value="interior">Washington DC</option>
+                  <option value="interior">New Jersey</option>
+                  <option value="interior">Los Angeles</option>
+                </select>
+              </div>
+
+              <span class="contacts-form__methods methods__title">Preferred contact method</span>
+              <div class="contacts-form__item contacts-form__methods">
+                <div class="contacts-form__method">
+                  <input type="radio" name="phone--method" id="phone--method">
+                  <label for="phone--method">Phone</label>
+                </div>
+                <div class="contacts-form__method">
+                  <input type="radio" name="email--method" id="email--method">
+                  <label for="email--method">Email</label>
+                </div>
+                <div class="contacts-form__method">
+                  <input type="radio" name="viber--method" id="viber--method">
+                  <label for="viber--method">Viber</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts-form__item contacts-form__item--textarea">
+            <label for="message" class="contacts-form__label">Message*</label>
+            <textarea name="message" id="message" class="contacts-form__input contacts-form__textarea" placeholder="Your message"></textarea>
+          </div>
+          <div class="contacts-form__item contacts-form__item--checkbox">
+            <input type="checkbox" id="agree" name="agree" checked />
+            <label for="" class="contacts-form__label contacts-form__label--checkbox">I agree to receive communications
+              from Createx Construction Bureau.</label>
+              <input type="submit" value="send request" class="contacts-form__submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

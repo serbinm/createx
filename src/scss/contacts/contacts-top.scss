@@ -11,7 +11,13 @@
   }
 
   @media (max-width: 768px) {
-    background-position-x: 400px;
+    background-size: cover;
+    background-position-x: 353px;
+  }
+
+  @media (max-width: 500px) {
+    background-size: cover;
+    background-position-x: 270px;
   }
 
 
@@ -24,8 +30,8 @@
     padding-bottom: 209px;
 
     @media (max-width: 768px) {
-      padding-top: size-768(23);
-      padding-bottom: size-768(209);
+      padding-top: size-768(23, 1.5);
+      padding-bottom: size-768(209, 3);
     }
   }
 
@@ -47,9 +53,9 @@
     letter-spacing: 1px;
 
     @media (max-width: 768px) {
-      font-size: size-768(72);
-      line-height: size-768(94);
-      margin-top: size-768(43);
+      font-size: size-768(72, 1.5);
+      line-height: size-768(94, 1.5);
+      margin-top: size-768(43, 1.5);
     }
   }
 
@@ -58,7 +64,7 @@
     font-size: 14px;
 
     @media (max-width: 768px) {
-      font-size: size-768(14);
+      font-size: size-768(14, 1.5);
     }
 
     &:not(:first-child) {
@@ -79,9 +85,9 @@
     max-width: 600px;
 
     @media (max-width: 768px) {
-      font-size: size-768(23);
-      line-height: size-768(30);
-      margin-top: size-768(23);
+      font-size: size-768(23, 1.5);
+      line-height: size-768(30, 1.5);
+      margin-top: size-768(23, 1.5);
     }
   }
 }
