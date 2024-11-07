@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+@@include('html/modules/_head.htm',{
+"title":"News"
+})
+
 <body>
-  news
+  @@include('html/news/_news-top.htm',{})
+  <main class="page">
+  </main>
+  @@include('html/modules/_footer.htm',{})
+  @@include('html/modules/_js.htm',{})
 </body>
+
 </html>

@@ -1,0 +1,134 @@
+.news-top {
+  background-color: $gray--200;
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    padding-top: 23px;
+    padding-bottom: 157px;
+
+    @media (max-width: 768px) {
+      padding-top: size-768(23, 1.5);
+      padding-bottom: size-768(157, 3);
+    }
+  }
+
+  &__route {
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
+    font-size: 14px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(14, 1.5);
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 80px;
+    color: $gray--900;
+    font-weight: 700;
+    margin-top: 36px;
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(72, 1.8);
+      line-height: size-768(94, 1.8);
+      margin-top: size-768(43, 1.8);
+    }
+  }
+
+  &__link {
+    color: $gray--800;
+    font-size: 14px;
+
+    @media (max-width: 768px) {
+      font-size: size-768(14, 1.5);
+    }
+
+    &:not(:first-child) {
+      padding-left: 4px;
+    }
+
+    &--disabled {
+      color: $gray--600;
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      justify-content: stretch;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+
+  .news-info {
+    display: flex;
+    gap: 11px;
+    font-size: 16px;
+    height: 22px;
+
+    // justify-content: center;
+    // align-items: center;
+    span {
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      font-size: size-768(16, 1.5);
+      align-items: center;
+    }
+
+    &__name {
+      // font-size: 16px;
+      font-weight: 700;
+      color: $orange;
+    }
+
+    &__date,
+    &__comments {
+      color: $gray--700;
+      padding-left: 26px;
+      background-repeat: no-repeat;
+      background-position-x: -1px;
+      background-position-y: 0;
+
+      @media(max-width: 550px) {
+        background-size: 15px 15px;
+      }
+    }
+
+    &__date {
+      background-image: url("@img/news-page/news-top__clock.svg");
+    }
+
+    &__comments {
+      background-image: url("@img/news-page/news-top__chat.svg");
+    }
+  }
+
+  .news-social {
+    display: flex;
+    gap: 12px;
+
+    &__link {
+      &:hover {
+        path {
+          fill: $orange;
+        }
+      }
+    }
+  }
+}
