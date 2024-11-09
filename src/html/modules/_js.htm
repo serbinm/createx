@@ -156,3 +156,26 @@
 </script>
 
 <!-- #endregion -->
+
+
+<!-- #region swiper Cottage -->
+<script>
+  var cottageSwiperSmall = new Swiper(".swiper-cottage", {
+    spaceBetween: 20,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var cottageSwiperBig = new Swiper(".swiper-cottage2", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-cottage2-button-next",
+      prevEl: ".swiper-cottage2-button-prev",
+    },
+    thumbs: {
+      swiper: cottageSwiperSmall,
+    },
+  });
+</script>
+
+<!-- #endregion  -->
