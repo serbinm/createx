@@ -6,21 +6,21 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- меняю местами -->
-	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241102010840"> -->
+	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241109091748"> -->
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- #region Ubuntu font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241102010840" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241109091748" rel="stylesheet">
 	<!-- #endregion -->
 
 	<!-- #region Swiper -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241102010840" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241109091748" />
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241102010840"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241109091748"></script>
 	<!-- #endregion -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241102010840">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241109091748">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -29,7 +29,7 @@
 	<header class="header container padding--header" id="header">
 		<div class="wrapper">
 			<nav class="header__nav">
-				<a href="index.html" class="header__logo">
+				<a href="cottage.html" class="header__logo">
 					<img src="img/header/header__logo.svg" alt="">
 				</a>
 				<ul class="header__list">
@@ -643,9 +643,9 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/app.min.js?_v=20241102010840"></script>
+	<script src="js/app.min.js?_v=20241109091748"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241102010840"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241109091748"></script>
 
 	<script>
 		const swiperConstruction = new Swiper('.swiper-construction', {
@@ -801,6 +801,29 @@
 	</script>
 
 	<!-- #endregion -->
+
+
+	<!-- #region swiper Cottage -->
+	<script>
+		var cottageSwiperSmall = new Swiper(".swiper-cottage", {
+			spaceBetween: 20,
+			slidesPerView: 6,
+			freeMode: true,
+			watchSlidesProgress: true,
+		});
+		var cottageSwiperBig = new Swiper(".swiper-cottage2", {
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-cottage2-button-next",
+				prevEl: ".swiper-cottage2-button-prev",
+			},
+			thumbs: {
+				swiper: cottageSwiperSmall,
+			},
+		});
+	</script>
+
+	<!-- #endregion  -->
 </body>
 
 </html>

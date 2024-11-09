@@ -2,13 +2,605 @@
 <html lang="en">
 
 <head>
+	<title>News</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- меняю местами -->
+	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241109091748"> -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- #region Ubuntu font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241109091748" rel="stylesheet">
+	<!-- #endregion -->
+
+	<!-- #region Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241109091748" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241109091748"></script>
+	<!-- #endregion -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241109091748">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
 </head>
 
 <body>
-	news
+	<section class="news-top container">
+		<header class="header container undefined" id="header">
+			<div class="wrapper">
+				<nav class="header__nav">
+					<a href="cottage.html" class="header__logo">
+						<img src="img/header/header__logo.svg" alt="">
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="about.html" class="header__link">About Us</a>
+						</li>
+						<li class="header__item">
+							<a href="services.html" class="header__link">Services</a>
+						</li>
+						<li class="header__item">
+							<a href="work.html" class="header__link">Work</a>
+						</li>
+						<li class="header__item">
+							<a href="news.html" class="header__link">News</a>
+						</li>
+						<li class="header__item">
+							<a href="contacts.html" class="header__link">Contacts</a>
+						</li>
+					</ul>
+					<div class="header__contacts">
+						<div class="header__contact-item header__contact-item--phone">
+							<span class="header__text">Call us</span>
+							<span class="header__contact">(405) 555-0128</span>
+						</div>
+						<div class="header__contact-item header__contact-item--chat">
+							<span class="header__text">Talk to us</span>
+							<span class="header__contact">hello@createx.com</span>
+						</div>
+					</div>
+					<button class="header__open">
+						<span class="header__open-icon header__open-icon--top"></span>
+						<span class="header__open-icon header__open-icon--middle"></span>
+						<span class="header__open-icon header__open-icon--bottom"></span>
+					</button>
+				</nav>
+			</div>
+		</header>
+		<div class="news-top__wrapper wrapper">
+			<div class="news-top__route">
+				<a href="" class="news-top__link">Homepage</a>
+				<span class="news-top__slash">/</span>
+				<a href="" class="news-top__link">News</a>
+				<span class="news-top__slash">/</span>
+				<span href="" class="news-top__link news-top__link--disabled">How to Build climate Change-Resilient
+					Infrastructure</span>
+			</div>
+			<h1 class="news-top__title">How to Build Climate Change-Resilient Infrastructure</h1>
+			<div class="news-top__bottom">
+				<div class="news-top__information news-info">
+					<span class="news-info__name">Industry News</span>
+					<span class="news-info__pillar">|</span>
+					<span class="news-info__date">June 24, 2020</span>
+					<span class="news-info__pillar">|</span>
+					<span class="news-info__comments">4 comments</span>
+				</div>
+				<div class="news-top__social news-social">
+					<a href="" class="news-social__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="#787A80" />
+						</svg>
+					</a>
+					<a href="" class="news-social__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.995 22L22 21.9992V14.6642C22 11.0758 21.2275 8.31167 17.0325 8.31167C15.0158 8.31167 13.6625 9.41833 13.11 10.4675H13.0517V8.64667H9.07416V21.9992H13.2158V15.3875C13.2158 13.6467 13.5458 11.9633 15.7017 11.9633C17.8258 11.9633 17.8575 13.95 17.8575 15.4992V22H21.995Z" fill="#787A80" />
+							<path d="M2.32999 8.6475H6.47666V22H2.32999V8.6475Z" fill="#787A80" />
+							<path d="M4.40167 2C3.07583 2 2 3.07583 2 4.40167C2 5.7275 3.07583 6.82583 4.40167 6.82583C5.7275 6.82583 6.80333 5.7275 6.80333 4.40167C6.8025 3.07583 5.72667 2 4.40167 2Z" fill="#787A80" />
+						</svg>
+					</a>
+					<a href="" class="news-social__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" fill="#787A80" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main class="page">
+		<section class="news-article container">
+			<div class="wrapper news-article__wrapper">
+				<img src="img/news-page/news-article__image.webp" alt="" class="news-article__image">
+				<article class="news-article__article">
+					<p class="news-article__text news-article__text--bold">Vulputate vitae pellentesque scelerisque luctus consequat
+						mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor
+						nullam diam quis est hendrerit ac euismod. </p>
+					<br>
+					<p class="news-article__text">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et
+						sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare
+						pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio.
+						Mi varius viverra risus vel.</p>
+					<br>
+					<p class="news-article__text">Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat
+						lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed.
+						Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut
+						aliquet velit pharetra, nisi nunc, non.</p>
+					<br>
+					<p class="news-article__text news-article__text--bold news-article__text--quote">Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed
+						purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot euismod vulputate etiam
+						eros. Vel accumsan at elit neque, ipsum.</p>
+					<br>
+					<p class="news-article__text">Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis.
+						Vitae mus blandit in neque amet non fringilla blandit:</p>
+					<br>
+					<ul class="news-article__list">
+						<li class="news-article__item">
+							<img src="img/news-page/news-article__check.svg" alt="" class="news-article__check">
+							<p class="news-article__text">A fermentum in morbi pretium aliquam adipiscing donec tempus.</p>
+						</li>
+						<li class="news-article__item">
+							<img src="img/news-page/news-article__check.svg" alt="" class="news-article__check">
+							<p class="news-article__text">Vulputate placerat amet pulvinar lorem nisl.</p>
+						</li>
+						<li class="news-article__item">
+							<img src="img/news-page/news-article__check.svg" alt="" class="news-article__check">
+							<p class="news-article__text">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p>
+						</li>
+						<li class="news-article__item">
+							<img src="img/news-page/news-article__check.svg" alt="" class="news-article__check">
+							<p class="news-article__text">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+						</li>
+					</ul>
+					<p class="news-article__text">
+						Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget.
+						Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam
+						eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus.
+						Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus
+						convallis eget netus vitae.
+					</p>
+					<br>
+					<div class="news-article__social">
+						<span class="news-article__span">Share:</span>
+						<a href="" class="news-article__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="#787A80" />
+							</svg>
+						</a>
+						<a href="" class="news-article__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21.995 22L22 21.9992V14.6642C22 11.0758 21.2275 8.31167 17.0325 8.31167C15.0158 8.31167 13.6625 9.41833 13.11 10.4675H13.0517V8.64667H9.07416V21.9992H13.2158V15.3875C13.2158 13.6467 13.5458 11.9633 15.7017 11.9633C17.8258 11.9633 17.8575 13.95 17.8575 15.4992V22H21.995Z" fill="#787A80" />
+								<path d="M2.32999 8.6475H6.47666V22H2.32999V8.6475Z" fill="#787A80" />
+								<path d="M4.40167 2C3.07583 2 2 3.07583 2 4.40167C2 5.7275 3.07583 6.82583 4.40167 6.82583C5.7275 6.82583 6.80333 5.7275 6.80333 4.40167C6.8025 3.07583 5.72667 2 4.40167 2Z" fill="#787A80" />
+							</svg>
+						</a>
+						<a href="" class="news-article__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" fill="#787A80" />
+							</svg>
+						</a>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="news-comments container">
+			<div class="news-comments__wrapper wrapper">
+				<h2 class="news-comments__title">4 comments</h2>
+				<div class="news-comments__container">
+					<div class="comments-item">
+						<div class="comments-item__info">
+							<span class="comments-item__name">Devon Lane</span>
+							<span class="comments-item__date">July 15, 2020</span>
+						</div>
+						<div class="comments-item__content">
+							<p class="comments-item__text">Phasellus varius faucibus ultrices odio in. Massa neque dictum natoque ornare
+								rutrum malesuada et phasellus. Viverra natoque nulla cras vel nisl proin senectus. Tortor sed eleifend ante
+								tristique felis sed urna aliquet. Suspendisse fames egestas sed duis purus diam et.</p>
+							<a href="" class="comments-item__reply">Reply</a>
+						</div>
+					</div>
+					<div class="comments-item">
+						<div class="comments-item__info">
+							<span class="comments-item__name">Annette Black</span>
+							<span class="comments-item__date">1 day ago</span>
+						</div>
+						<div class="comments-item__content">
+							<p class="comments-item__text"><span class="comments-item__pin">@Devon Lane</span> Egestas fermentum natoque sollicitudin mauris. Facilisis praesent
+								urna sed rhoncus quis pharetra pellentesque erat sagittis.</p>
+							<a href="" class="comments-item__reply">Reply</a>
+						</div>
+					</div>
+					<div class="comments-item">
+						<div class="comments-item__info">
+							<span class="comments-item__name">Albert Flores</span>
+							<span class="comments-item__date">July 7, 2020</span>
+						</div>
+						<div class="comments-item__content">
+							<p class="comments-item__text">Libero commodo sit dui ac proin. Penatibus ultricies at adipiscing mauris nunc.
+								Fames faucibus nisl duis id diam.</p>
+							<a href="" class="comments-item__reply">Reply</a>
+						</div>
+					</div>
+					<div class="comments-item">
+						<div class="comments-item__info">
+							<span class="comments-item__name">Marvin McKinney</span>
+							<span class="comments-item__date">June 28, 2020</span>
+						</div>
+						<div class="comments-item__content">
+							<p class="comments-item__text">Ullamcorper nibh sed ac ipsum nunc imperdiet rhoncus. Quam donec habitant nibh
+								sit consequat erat libero, tincidunt. Eros ut aliquam proin et duis. Mauris, egestas congue nibh dui a
+								nulla.</p>
+							<a href="" class="comments-item__reply">Reply</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="news-form container">
+			<div class="wrapper news-form__wrapper">
+				<h2 class="news-form__title">Leave your comment</h2>
+				<form action="" class="news-form__form">
+					<div class="news-form__item news-form__item--small">
+						<label for="name" class="news-form__label">Name*</label>
+						<input type="text" class="news-form__input" placeholder="Your name" id="name" name="name">
+					</div>
+					<div class="news-form__item news-form__item--small">
+						<label for="email" class="news-form__label">Email*</label>
+						<input type="email" class="news-form__input" id="email" name="email" placeholder="Your working email">
+					</div>
+					<div class="news-form__item news-form__item--big">
+						<label for="" class="news-form__label">Your comment*</label>
+						<textarea name="" id="" class="news-form__input news-form__textarea" placeholder="Type comment here"></textarea>
+					</div>
+					<input type="submit" value="post comment" class="news-form__submit">
+				</form>
+			</div>
+		</section>
+	</main>
+	<section class="details container">
+		<div class="wrapper details__wrapper">
+			<form action="" class="details__form">
+				<h3 class="details__title">A quick way to discuss details</h3>
+				<div class="details__fields">
+					<div class="details__item">
+						<label for="name" class="details__label">Name*</label>
+						<input type="text" class="details__input" name="name" id="name" placeholder="Your name">
+					</div>
+
+					<div class="details__item">
+						<label for="phone" class="details__label">Phone*</label>
+						<input type="number" class="details__input" name="phone" id="phone" placeholder="Your phone number">
+					</div>
+
+					<div class="details__item">
+						<label for="email" class="details__label">Email*</label>
+						<input type="email" class="details__input" name="email" id="email" placeholder="Your working email">
+					</div>
+
+					<div class="details__item">
+						<label for="message" class="details__label">Message*</label>
+						<textarea type="textarea" class="details__input details__input--textarea" name="message" id="message" placeholder="Your message" rows="2" cols="50"></textarea>
+					</div>
+
+					<div class="details__item details__item--checkbox">
+						<input type="checkbox" name="" id="checkbox" class="details__input details__input--checkbox">
+						<label for="checkbox" class="details__label details__label--checkbox">I agree to receive communications from Createx
+							Construction Bureau.</label>
+					</div>
+				</div>
+				<input type="submit" value="send request" class="details__submit">
+			</form>
+		</div>
+	</section>
+	<footer class="footer container">
+		<div class="wrapper footer__wrapper">
+			<div class="footer__top">
+				<div class="footer-social">
+					<div class="footer-social__top">
+						<a href="" class="footer-social__logo">
+							<img src="img/footer/footer__logo.webp" alt="" class="footer-social__image">
+						</a>
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a href="https://web.whatsapp.com/" class="footer-social__link">
+									<!-- <img src="img/footer/footer__whatsup.svg" alt="" class="footer-social__icon"> -->
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M22 11.7424C22 17.1231 17.6047 21.4849 12.1818 21.4849C10.4602 21.4849 8.84289 21.0449 7.43578 20.2727L2 22L3.77222 16.7729C2.87822 15.3049 2.36333 13.5831 2.36333 11.7424C2.36333 6.36178 6.75911 2 12.1818 2C17.6051 2 22 6.36178 22 11.7424ZM12.1818 3.55156C7.62978 3.55156 3.92711 7.226 3.92711 11.7424C3.92711 13.5347 4.51133 15.1944 5.49956 16.5447L4.46822 19.5867L7.64044 18.5784C8.94378 19.4342 10.5051 19.9333 12.182 19.9333C16.7333 19.9333 20.4367 16.2593 20.4367 11.7429C20.4367 7.22644 16.7336 3.55156 12.1818 3.55156ZM17.1398 13.9862C17.0791 13.8869 16.9189 13.8269 16.6784 13.7076C16.4376 13.5882 15.254 13.0102 15.034 12.9309C14.8133 12.8513 14.6524 12.8113 14.4922 13.0502C14.332 13.2893 13.8707 13.8269 13.73 13.9862C13.5896 14.146 13.4493 14.166 13.2084 14.0464C12.968 13.9271 12.1927 13.6747 11.2733 12.8613C10.558 12.2284 10.0749 11.4471 9.93444 11.2078C9.79422 10.9689 9.91978 10.8398 10.04 10.7209C10.1484 10.6138 10.2809 10.442 10.4011 10.3027C10.5218 10.1631 10.5618 10.0638 10.6416 9.90422C10.7222 9.74489 10.682 9.60556 10.6216 9.48578C10.5616 9.36644 10.0798 8.19133 9.87933 7.71311C9.67889 7.23533 9.47867 7.31489 9.338 7.31489C9.19778 7.31489 9.03711 7.29489 8.87667 7.29489C8.71622 7.29489 8.45533 7.35467 8.23467 7.59356C8.01422 7.83267 7.39267 8.41044 7.39267 9.58533C7.39267 10.7604 8.25467 11.8958 8.37533 12.0549C8.49556 12.214 10.0398 14.7038 12.4864 15.66C14.9333 16.6158 14.9333 16.2969 15.3747 16.2569C15.8156 16.2171 16.7982 15.6793 16.9996 15.122C17.1996 14.5638 17.1996 14.0858 17.1398 13.9862Z" fill="white" />
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="https://www.messenger.com/login/?next=https%3A%2F%2Fwww.messenger.com%2F%3Flocale%3Dpl_PL" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M12 2C6.4775 2 2 6.145 2 11.2587C2 14.1725 3.45375 16.7712 5.72625 18.4688V22L9.13125 20.1313C10.04 20.3825 11.0025 20.5187 12 20.5187C17.5225 20.5187 22 16.3737 22 11.26C22 6.14625 17.5225 2 12 2ZM12.9937 14.4688L10.4475 11.7525L5.47875 14.4688L10.945 8.66625L13.5538 11.3825L18.46 8.66625L12.9937 14.4688Z" fill="white" />
+										</g>
+									</svg>
+
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="https://www.facebook.com/" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white" />
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="https://x.com/?lang=ru" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" fill="white" />
+										</g>
+									</svg>
+
+								</a>
+							</li>
+
+							<li class="footer-social__item">
+								<a href="https://www.youtube.com/" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z" fill="white" />
+										</g>
+									</svg>
+
+								</a>
+							</li>
+						</ul>
+					</div>
+					<p class="footer-social__text">Createx Construction Bureau has been successfully operating in the USA
+						construction market since 2000. We are proud to offer you quality construction and exemplary service. Our
+						mission is to set the highest standards for construction sphere.</p>
+				</div>
+				<div class="footer-subscribe">
+					<h2 class="footer-subscribe__title">Let's stay in touch</h2>
+					<form action="" class="footer-subscribe__form">
+						<input type="email" class="footer-subscribe__input" name="email" placeholder="Your email address">
+						<input type="submit" value="subscribe" class="footer-subscribe__submit">
+					</form>
+					<p class="footer-subscribe__text">*Subscribe to our newsletter to receive communications and early updates from
+						Createx Construction Bureau.</p>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer-address">
+					<h2 class="footer-address__title accordion">head office</h2>
+					<ul class="footer-address__list">
+						<li class="footer-address__item">
+							<span class="footer-address__white">Address: </span> 8502 Preston Rd. Inglewood, New York
+						</li>
+						<li class="footer-address__item">
+							<span class="footer-address__white">Cell: </span>(405) 555-0128
+						</li>
+						<li class="footer-address__item">
+							<span class="footer-address__white">Email: </span>hello@createx.com
+						</li>
+					</ul>
+				</div>
+				<div class="footer-about">
+					<h2 class="footer-about__title accordion">who we are</h2>
+					<ul class="footer-about__list">
+						<li class="footer-about__item">
+							<a href="about.html" class="footer-about__link">About Us</a>
+						</li>
+						<li class="footer-about__item">
+							<a href="positions.html" class="footer-about__link">Available Positions</a>
+						</li>
+						<li class="footer-about__item">
+							<a href="contacts.html" class="footer-about__link">Contacts</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-experiences">
+					<h2 class="footer-experiences__title accordion">our experiences</h2>
+					<ul class="footer-experiences__list">
+						<li class="footer-experiences__item">
+							<a href="services.html" class="footer-experiences__link">Services</a>
+						</li>
+						<li class="footer-experiences__item">
+							<a href="work.html" class="footer-experiences__link">Work</a>
+						</li>
+						<li class="footer-experiences__item">
+							<a href="news.html" class="footer-experiences__link">News</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__rights">
+				<div class="footer-rights">
+					<span class="footer-rights__text">© All rights reserved. Made with</span>
+					<div class="footer-rights__name">
+						<img src="img/footer/footer__heart.svg" alt="" class="footer-rights__heart">
+						<span class="footer-rights__credits">by Createx Studio</span>
+					</div>
+				</div>
+				<div class="footer-elevate">
+					<span class="footer-elevate__text">go to top</span>
+					<a href="#header" class="footer-elevate__link"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/app.min.js?_v=20241109091748"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241109091748"></script>
+
+	<script>
+		const swiperConstruction = new Swiper('.swiper-construction', {
+			slidesPerView: 1,
+			centeredSlides: true,
+			// Optional parameters
+			// slidesPerGroup: 2,
+			// initialSlide: 1,
+			// slidesPerView: 2,
+			// spaceBetween: 70,
+			// loop: true,
+			// grabCursor: true,
+
+			// centeredSlides: true,
+			// initialSlide: 1,
+
+
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-construction__next',
+				prevEl: '.swiper-construction__prev',
+			},
+
+			// If we need pagination
+			// pagination: {
+			//   el: '.swiper-pagination',
+			// },
+
+			pagination: {
+				el: '.swiper-construction__pagination',
+				clickable: true,
+				renderBullet: function(index, className) {
+					// Рендерим цифры вместо точек
+					return '<span class="' + className + '">' + "0" + (index + 1) + '</span>';
+				}
+			},
+		});
+	</script>
+
+	<script>
+		const swiperBrowse = new Swiper('.swiper-browse', {
+			// slidesPerView: 3,
+			centeredSlides: true,
+			// Optional parameters
+			// slidesPerGroup: 2,
+			initialSlide: 1,
+			// slidesPerView: 2,
+
+			// loop: true,
+			// grabCursor: true,
+
+			// centeredSlides: true,
+			// initialSlide: 1,
+
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+
+				768: {
+					slidesPerView: 2,
+					centeredSlides: false,
+				},
+
+				1230: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				}
+			},
+			// Navigation arrows
+
+			navigation: {
+				nextEl: '.swiper-browse__next',
+				prevEl: '.swiper-browse__prev',
+			},
+
+			// If we need pagination
+			// pagination: {
+			//   el: '.swiper-pagination',
+			// },
+
+			// pagination: {
+			//   el: '.swiper-browse__pagination',
+			//   clickable: true,
+			//   renderBullet: function (index, className) {
+			//     // Рендерим цифры вместо точек
+			//     return '<span class="' + className + '">' + "0" + (index + 1) + '</span>';
+			//   }
+			// },
+		});
+	</script>
+
+
+
+
+	<!-- #region accordion -->
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				console.log(this.nextElementSibling)
+				if (panel.style.display === "flex") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "flex";
+				}
+			});
+		}
+	</script>
+	<!-- #endregion -->
+
+	<!-- #region interior accordion -->
+	<script>
+		var acc = document.getElementsByClassName("interior-accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("interior-active");
+				var panel = this.nextElementSibling;
+				// console.log(this.nextElementSibling);
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+					// icon.style.display = "none";
+				} else {
+					panel.style.display = "block";
+					// icon.style.display = "block";
+				}
+			});
+		}
+	</script>
+	<!-- #endregion -->
+
+
+	<!-- #region video -->
+	<script>
+		function playVideo() {
+			const video = document.getElementById("video");
+			const placeholder = document.getElementById("videoPlaceholder");
+
+			// Показываем видео и запускаем его
+			video.style.display = "block";
+			// video.play();
+
+			// Скрываем плейсхолдер
+			placeholder.style.display = "none";
+		}
+	</script>
+
+	<!-- #endregion -->
+
+
+	<!-- #region swiper Cottage -->
+	<script>
+		var cottageSwiperSmall = new Swiper(".swiper-cottage", {
+			spaceBetween: 20,
+			slidesPerView: 6,
+			freeMode: true,
+			watchSlidesProgress: true,
+		});
+		var cottageSwiperBig = new Swiper(".swiper-cottage2", {
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-cottage2-button-next",
+				prevEl: ".swiper-cottage2-button-prev",
+			},
+			thumbs: {
+				swiper: cottageSwiperSmall,
+			},
+		});
+	</script>
+
+	<!-- #endregion  -->
 </body>
 
 </html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contacts</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- меняю местами -->
+	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20241109091748"> -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- #region Ubuntu font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&_v=20241109091748" rel="stylesheet">
+	<!-- #endregion -->
+
+	<!-- #region Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241109091748" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241109091748"></script>
+	<!-- #endregion -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241109091748">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<section class="contacts-top container">
+		<header class="header container undefined" id="header">
+			<div class="wrapper">
+				<nav class="header__nav">
+					<a href="cottage.html" class="header__logo">
+						<img src="img/header/header__logo.svg" alt="">
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="about.html" class="header__link">About Us</a>
+						</li>
+						<li class="header__item">
+							<a href="services.html" class="header__link">Services</a>
+						</li>
+						<li class="header__item">
+							<a href="work.html" class="header__link">Work</a>
+						</li>
+						<li class="header__item">
+							<a href="news.html" class="header__link">News</a>
+						</li>
+						<li class="header__item">
+							<a href="contacts.html" class="header__link">Contacts</a>
+						</li>
+					</ul>
+					<div class="header__contacts">
+						<div class="header__contact-item header__contact-item--phone">
+							<span class="header__text">Call us</span>
+							<span class="header__contact">(405) 555-0128</span>
+						</div>
+						<div class="header__contact-item header__contact-item--chat">
+							<span class="header__text">Talk to us</span>
+							<span class="header__contact">hello@createx.com</span>
+						</div>
+					</div>
+					<button class="header__open">
+						<span class="header__open-icon header__open-icon--top"></span>
+						<span class="header__open-icon header__open-icon--middle"></span>
+						<span class="header__open-icon header__open-icon--bottom"></span>
+					</button>
+				</nav>
+			</div>
+		</header>
+		<div class="contacts-top__wrapper wrapper">
+			<div class="contacts-top__route">
+				<a href="" class="contacts-top__link">Homepage</a>
+				<span href="" class="contacts-top__link contacts-top__link--disabled">/ Contacts</span>
+			</div>
+			<h1 class="contacts-top__title">contacts</h1>
+			<p class="contacts-top__text">Contact us for all your construction needs. We always welcome any questions and comments.</p>
+		</div>
+	</section>
+	<main class="page">
+		<section class="contacts-contact container">
+			<div class="contacts-contact__wrapper wrapper">
+				<h2 class="contacts-contact__title">Contact us</h2>
+				<div class="contacts-contact__description">Please complete the form. Detailed information will help us to make a
+					tuned offer.</div>
+				<div class="contacts-contact__container">
+					<div class="contacts-contact__col--1 contacts-contact__col">
+						<img src="img/contacts/contacts__contact--girl.webp" alt="" class="contacts-contact__image">
+					</div>
+					<div class="contacts-contact__col--2 contacts-contact__col">
+						<form action="" class="contacts-form">
+							<div class="contacts-form__top">
+								<div class="contacts-form__left">
+									<div class="contacts-form__item">
+										<label for="name" class="contacts-form__label">Name*</label>
+										<input type="text" class="contacts-form__input" id="name" name="name" placeholder="Your name">
+									</div>
+									<div class="contacts-form__item">
+										<label for="phone" class="contacts-form__label">Phone*</label>
+										<input type="text" class="contacts-form__input" placeholder="Your phone number" name="phone" id="phone">
+									</div>
+									<div class="contacts-form__item">
+										<label for="" class="contacts-form__label">Email</label>
+										<input type="text" class="contacts-form__input" name="email" id="email" placeholder="Your working email">
+									</div>
+								</div>
+
+								<div class="contacts-form__right">
+									<div class="contacts-form__item">
+										<label for="" class="contacts-form__label">I am interested in</label>
+										<select type="text" class="contacts-form__input contacts-form__select" name="interest" id="interest">
+											<option value="interior">Interior Design</option>
+											<option value="interior">Construction works</option>
+											<option value="interior">Repairs</option>
+											<option value="interior">Other</option>
+										</select>
+									</div>
+									<div class="contacts-form__item">
+										<label for="" class="contacts-form__label">Location*</label>
+										<select type="text" class="contacts-form__input contacts-form__select" name="location" id="location">
+											<option value="interior">New York</option>
+											<option value="interior">Washington DC</option>
+											<option value="interior">New Jersey</option>
+											<option value="interior">Los Angeles</option>
+										</select>
+									</div>
+
+									<span class="contacts-form__methods methods__title">Preferred contact method</span>
+									<div class="contacts-form__item contacts-form__methods">
+										<div class="contacts-form__method">
+											<input type="radio" name="phone--method" id="phone--method">
+											<label for="phone--method">Phone</label>
+										</div>
+										<div class="contacts-form__method">
+											<input type="radio" name="email--method" id="email--method">
+											<label for="email--method">Email</label>
+										</div>
+										<div class="contacts-form__method">
+											<input type="radio" name="viber--method" id="viber--method">
+											<label for="viber--method">Viber</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="contacts-form__item contacts-form__item--textarea">
+								<label for="message" class="contacts-form__label">Message*</label>
+								<textarea name="message" id="message" class="contacts-form__input contacts-form__textarea" placeholder="Your message"></textarea>
+							</div>
+							<div class="contacts-form__item contacts-form__item--checkbox">
+								<input type="checkbox" id="agree" name="agree" checked />
+								<label for="" class="contacts-form__label contacts-form__label--checkbox">I agree to receive communications
+									from Createx Construction Bureau.</label>
+								<input type="submit" value="send request" class="contacts-form__submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts-address container">
+			<div class="contacts-address__wrapper wrapper">
+				<h2 class="contacts-address__title">Our offices</h2>
+				<span class="contacts-address__description">Give us a call, send us a note or visit our office. We can't wait to hear from you!</span>
+
+				<div class="contacts-address__list address-list">
+					<div class="address-list__item">
+						<div class="address-list__wrapper">
+							<h3 class="address-list__location">New York, USA</h3>
+							<span class="address-list__text">8502 Preston Rd. Inglewood, New York 98380</span>
+							<a href="" class="address-list__link">See on the map</a>
+							<span class="address-list__name">Call:<span class="address-list__description">(405) 555-0128</span></span>
+							<span class="address-list__name">Email:<span class="address-list__description">hello@createx.com</span></span>
+							<span class="address-list__name">Schedule:<span class="address-list__description">Mon - Fri 9:00 - 18:00</span></span>
+						</div>
+					</div>
+					<div class="address-list__item">
+						<div class="address-list__wrapper">
+							<h3 class="address-list__location">New Jersey, USA</h3>
+							<span class="address-list__text">2464 Royal Ln. Mesa, New Jersey 45463</span>
+							<a href="" class="address-list__link">See on the map</a>
+							<span class="address-list__name">Call: <span class="address-list__description">(808) 555-0111</span></span>
+							<span class="address-list__name">Email:<span class="address-list__description">hello@createx.com</span></span>
+							<span class="address-list__name">Schedule:<span class="address-list__description">Mon - Fri 9:00 - 18:00</span></span>
+						</div>
+					</div>
+					<div class="address-list__item">
+						<div class="address-list__wrapper">
+							<h3 class="address-list__location">San Francisco, USA</h3>
+							<span class="address-list__text">8502 Preston Rd. Inglewood, San Francisco 98380</span>
+							<a href="" class="address-list__link">See on the map</a>
+							<span class="address-list__name">Call: <span class="address-list__description">(505) 555-0125</span></span>
+							<span class="address-list__name">Email:<span class="address-list__description">hello@createx.com</span></span>
+							<span class="address-list__name">Schedule:<span class="address-list__description">Mon - Fri 9:00 - 18:00</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts-social container">
+			<div class="contacts-social__wrapper wrapper">
+				<h2 class="contacts-social__title">Find us at</h2>
+				<ul class="contacts-social__list">
+					<li class="contacts-social__item">
+						<a href="" class="contacts-social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts-social__icon contacts-social--">
+								<g opacity="0.6">
+									<path d="M22 11.7424C22 17.1231 17.6047 21.4849 12.1818 21.4849C10.4602 21.4849 8.84289 21.0449 7.43578 20.2727L2 22L3.77222 16.7729C2.87822 15.3049 2.36333 13.5831 2.36333 11.7424C2.36333 6.36178 6.75911 2 12.1818 2C17.6051 2 22 6.36178 22 11.7424ZM12.1818 3.55156C7.62978 3.55156 3.92711 7.226 3.92711 11.7424C3.92711 13.5347 4.51133 15.1944 5.49956 16.5447L4.46822 19.5867L7.64044 18.5784C8.94378 19.4342 10.5051 19.9333 12.182 19.9333C16.7333 19.9333 20.4367 16.2593 20.4367 11.7429C20.4367 7.22644 16.7336 3.55156 12.1818 3.55156ZM17.1398 13.9862C17.0791 13.8869 16.9189 13.8269 16.6784 13.7076C16.4376 13.5882 15.254 13.0102 15.034 12.9309C14.8133 12.8513 14.6524 12.8113 14.4922 13.0502C14.332 13.2893 13.8707 13.8269 13.73 13.9862C13.5896 14.146 13.4493 14.166 13.2084 14.0464C12.968 13.9271 12.1927 13.6747 11.2733 12.8613C10.558 12.2284 10.0749 11.4471 9.93444 11.2078C9.79422 10.9689 9.91978 10.8398 10.04 10.7209C10.1484 10.6138 10.2809 10.442 10.4011 10.3027C10.5218 10.1631 10.5618 10.0638 10.6416 9.90422C10.7222 9.74489 10.682 9.60556 10.6216 9.48578C10.5616 9.36644 10.0798 8.19133 9.87933 7.71311C9.67889 7.23533 9.47867 7.31489 9.338 7.31489C9.19778 7.31489 9.03711 7.29489 8.87667 7.29489C8.71622 7.29489 8.45533 7.35467 8.23467 7.59356C8.01422 7.83267 7.39267 8.41044 7.39267 9.58533C7.39267 10.7604 8.25467 11.8958 8.37533 12.0549C8.49556 12.214 10.0398 14.7038 12.4864 15.66C14.9333 16.6158 14.9333 16.2969 15.3747 16.2569C15.8156 16.2171 16.7982 15.6793 16.9996 15.122C17.1996 14.5638 17.1996 14.0858 17.1398 13.9862Z" fill="white" />
+								</g>
+							</svg>
+						</a>
+					</li>
+					<li class="contacts-social__item">
+						<a href="" class="contacts-social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts-social__icon contacts-social--">
+								<g opacity="0.6">
+									<path d="M12 2C6.4775 2 2 6.145 2 11.2587C2 14.1725 3.45375 16.7712 5.72625 18.4688V22L9.13125 20.1313C10.04 20.3825 11.0025 20.5187 12 20.5187C17.5225 20.5187 22 16.3737 22 11.26C22 6.14625 17.5225 2 12 2ZM12.9937 14.4688L10.4475 11.7525L5.47875 14.4688L10.945 8.66625L13.5538 11.3825L18.46 8.66625L12.9937 14.4688Z" fill="white" />
+								</g>
+							</svg>
+
+						</a>
+					</li>
+					<li class="contacts-social__item">
+						<a href="" class="contacts-social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts-social__icon contacts-social--">
+								<g opacity="0.6">
+									<path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white" />
+								</g>
+							</svg>
+
+						</a>
+					</li>
+					<li class="contacts-social__item">
+						<a href="" class="contacts-social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts-social__icon contacts-social--">
+								<g opacity="0.6">
+									<path d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" fill="white" />
+								</g>
+							</svg>
+
+						</a>
+					</li>
+					<li class="contacts-social__item">
+						<a href="" class="contacts-social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts-social__icon contacts-social--">
+								<g opacity="0.6">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z" fill="white" />
+								</g>
+							</svg>
+
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer container">
+		<div class="wrapper footer__wrapper">
+			<div class="footer__top">
+				<div class="footer-social">
+					<div class="footer-social__top">
+						<a href="" class="footer-social__logo">
+							<img src="img/footer/footer__logo.webp" alt="" class="footer-social__image">
+						</a>
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a href="https://web.whatsapp.com/" class="footer-social__link">
+									<!-- <img src="img/footer/footer__whatsup.svg" alt="" class="footer-social__icon"> -->
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M22 11.7424C22 17.1231 17.6047 21.4849 12.1818 21.4849C10.4602 21.4849 8.84289 21.0449 7.43578 20.2727L2 22L3.77222 16.7729C2.87822 15.3049 2.36333 13.5831 2.36333 11.7424C2.36333 6.36178 6.75911 2 12.1818 2C17.6051 2 22 6.36178 22 11.7424ZM12.1818 3.55156C7.62978 3.55156 3.92711 7.226 3.92711 11.7424C3.92711 13.5347 4.51133 15.1944 5.49956 16.5447L4.46822 19.5867L7.64044 18.5784C8.94378 19.4342 10.5051 19.9333 12.182 19.9333C16.7333 19.9333 20.4367 16.2593 20.4367 11.7429C20.4367 7.22644 16.7336 3.55156 12.1818 3.55156ZM17.1398 13.9862C17.0791 13.8869 16.9189 13.8269 16.6784 13.7076C16.4376 13.5882 15.254 13.0102 15.034 12.9309C14.8133 12.8513 14.6524 12.8113 14.4922 13.0502C14.332 13.2893 13.8707 13.8269 13.73 13.9862C13.5896 14.146 13.4493 14.166 13.2084 14.0464C12.968 13.9271 12.1927 13.6747 11.2733 12.8613C10.558 12.2284 10.0749 11.4471 9.93444 11.2078C9.79422 10.9689 9.91978 10.8398 10.04 10.7209C10.1484 10.6138 10.2809 10.442 10.4011 10.3027C10.5218 10.1631 10.5618 10.0638 10.6416 9.90422C10.7222 9.74489 10.682 9.60556 10.6216 9.48578C10.5616 9.36644 10.0798 8.19133 9.87933 7.71311C9.67889 7.23533 9.47867 7.31489 9.338 7.31489C9.19778 7.31489 9.03711 7.29489 8.87667 7.29489C8.71622 7.29489 8.45533 7.35467 8.23467 7.59356C8.01422 7.83267 7.39267 8.41044 7.39267 9.58533C7.39267 10.7604 8.25467 11.8958 8.37533 12.0549C8.49556 12.214 10.0398 14.7038 12.4864 15.66C14.9333 16.6158 14.9333 16.2969 15.3747 16.2569C15.8156 16.2171 16.7982 15.6793 16.9996 15.122C17.1996 14.5638 17.1996 14.0858 17.1398 13.9862Z" fill="white" />
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="https://www.messenger.com/login/?next=https%3A%2F%2Fwww.messenger.com%2F%3Flocale%3Dpl_PL" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M12 2C6.4775 2 2 6.145 2 11.2587C2 14.1725 3.45375 16.7712 5.72625 18.4688V22L9.13125 20.1313C10.04 20.3825 11.0025 20.5187 12 20.5187C17.5225 20.5187 22 16.3737 22 11.26C22 6.14625 17.5225 2 12 2ZM12.9937 14.4688L10.4475 11.7525L5.47875 14.4688L10.945 8.66625L13.5538 11.3825L18.46 8.66625L12.9937 14.4688Z" fill="white" />
+										</g>
+									</svg>
+
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="https://www.facebook.com/" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white" />
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="https://x.com/?lang=ru" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" fill="white" />
+										</g>
+									</svg>
+
+								</a>
+							</li>
+
+							<li class="footer-social__item">
+								<a href="https://www.youtube.com/" class="footer-social__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon">
+										<g opacity="0.6">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z" fill="white" />
+										</g>
+									</svg>
+
+								</a>
+							</li>
+						</ul>
+					</div>
+					<p class="footer-social__text">Createx Construction Bureau has been successfully operating in the USA
+						construction market since 2000. We are proud to offer you quality construction and exemplary service. Our
+						mission is to set the highest standards for construction sphere.</p>
+				</div>
+				<div class="footer-subscribe">
+					<h2 class="footer-subscribe__title">Let's stay in touch</h2>
+					<form action="" class="footer-subscribe__form">
+						<input type="email" class="footer-subscribe__input" name="email" placeholder="Your email address">
+						<input type="submit" value="subscribe" class="footer-subscribe__submit">
+					</form>
+					<p class="footer-subscribe__text">*Subscribe to our newsletter to receive communications and early updates from
+						Createx Construction Bureau.</p>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer-address">
+					<h2 class="footer-address__title accordion">head office</h2>
+					<ul class="footer-address__list">
+						<li class="footer-address__item">
+							<span class="footer-address__white">Address: </span> 8502 Preston Rd. Inglewood, New York
+						</li>
+						<li class="footer-address__item">
+							<span class="footer-address__white">Cell: </span>(405) 555-0128
+						</li>
+						<li class="footer-address__item">
+							<span class="footer-address__white">Email: </span>hello@createx.com
+						</li>
+					</ul>
+				</div>
+				<div class="footer-about">
+					<h2 class="footer-about__title accordion">who we are</h2>
+					<ul class="footer-about__list">
+						<li class="footer-about__item">
+							<a href="about.html" class="footer-about__link">About Us</a>
+						</li>
+						<li class="footer-about__item">
+							<a href="positions.html" class="footer-about__link">Available Positions</a>
+						</li>
+						<li class="footer-about__item">
+							<a href="contacts.html" class="footer-about__link">Contacts</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-experiences">
+					<h2 class="footer-experiences__title accordion">our experiences</h2>
+					<ul class="footer-experiences__list">
+						<li class="footer-experiences__item">
+							<a href="services.html" class="footer-experiences__link">Services</a>
+						</li>
+						<li class="footer-experiences__item">
+							<a href="work.html" class="footer-experiences__link">Work</a>
+						</li>
+						<li class="footer-experiences__item">
+							<a href="news.html" class="footer-experiences__link">News</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__rights">
+				<div class="footer-rights">
+					<span class="footer-rights__text">© All rights reserved. Made with</span>
+					<div class="footer-rights__name">
+						<img src="img/footer/footer__heart.svg" alt="" class="footer-rights__heart">
+						<span class="footer-rights__credits">by Createx Studio</span>
+					</div>
+				</div>
+				<div class="footer-elevate">
+					<span class="footer-elevate__text">go to top</span>
+					<a href="#header" class="footer-elevate__link"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/app.min.js?_v=20241109091748"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241109091748"></script>
+
+	<script>
+		const swiperConstruction = new Swiper('.swiper-construction', {
+			slidesPerView: 1,
+			centeredSlides: true,
+			// Optional parameters
+			// slidesPerGroup: 2,
+			// initialSlide: 1,
+			// slidesPerView: 2,
+			// spaceBetween: 70,
+			// loop: true,
+			// grabCursor: true,
+
+			// centeredSlides: true,
+			// initialSlide: 1,
+
+
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-construction__next',
+				prevEl: '.swiper-construction__prev',
+			},
+
+			// If we need pagination
+			// pagination: {
+			//   el: '.swiper-pagination',
+			// },
+
+			pagination: {
+				el: '.swiper-construction__pagination',
+				clickable: true,
+				renderBullet: function(index, className) {
+					// Рендерим цифры вместо точек
+					return '<span class="' + className + '">' + "0" + (index + 1) + '</span>';
+				}
+			},
+		});
+	</script>
+
+	<script>
+		const swiperBrowse = new Swiper('.swiper-browse', {
+			// slidesPerView: 3,
+			centeredSlides: true,
+			// Optional parameters
+			// slidesPerGroup: 2,
+			initialSlide: 1,
+			// slidesPerView: 2,
+
+			// loop: true,
+			// grabCursor: true,
+
+			// centeredSlides: true,
+			// initialSlide: 1,
+
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+
+				768: {
+					slidesPerView: 2,
+					centeredSlides: false,
+				},
+
+				1230: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				}
+			},
+			// Navigation arrows
+
+			navigation: {
+				nextEl: '.swiper-browse__next',
+				prevEl: '.swiper-browse__prev',
+			},
+
+			// If we need pagination
+			// pagination: {
+			//   el: '.swiper-pagination',
+			// },
+
+			// pagination: {
+			//   el: '.swiper-browse__pagination',
+			//   clickable: true,
+			//   renderBullet: function (index, className) {
+			//     // Рендерим цифры вместо точек
+			//     return '<span class="' + className + '">' + "0" + (index + 1) + '</span>';
+			//   }
+			// },
+		});
+	</script>
+
+
+
+
+	<!-- #region accordion -->
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				console.log(this.nextElementSibling)
+				if (panel.style.display === "flex") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "flex";
+				}
+			});
+		}
+	</script>
+	<!-- #endregion -->
+
+	<!-- #region interior accordion -->
+	<script>
+		var acc = document.getElementsByClassName("interior-accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("interior-active");
+				var panel = this.nextElementSibling;
+				// console.log(this.nextElementSibling);
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+					// icon.style.display = "none";
+				} else {
+					panel.style.display = "block";
+					// icon.style.display = "block";
+				}
+			});
+		}
+	</script>
+	<!-- #endregion -->
+
+
+	<!-- #region video -->
+	<script>
+		function playVideo() {
+			const video = document.getElementById("video");
+			const placeholder = document.getElementById("videoPlaceholder");
+
+			// Показываем видео и запускаем его
+			video.style.display = "block";
+			// video.play();
+
+			// Скрываем плейсхолдер
+			placeholder.style.display = "none";
+		}
+	</script>
+
+	<!-- #endregion -->
+
+
+	<!-- #region swiper Cottage -->
+	<script>
+		var cottageSwiperSmall = new Swiper(".swiper-cottage", {
+			spaceBetween: 20,
+			slidesPerView: 6,
+			freeMode: true,
+			watchSlidesProgress: true,
+		});
+		var cottageSwiperBig = new Swiper(".swiper-cottage2", {
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-cottage2-button-next",
+				prevEl: ".swiper-cottage2-button-prev",
+			},
+			thumbs: {
+				swiper: cottageSwiperSmall,
+			},
+		});
+	</script>
+
+	<!-- #endregion  -->
+</body>
+
+</html>
