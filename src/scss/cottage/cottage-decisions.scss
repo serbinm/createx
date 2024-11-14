@@ -2,11 +2,11 @@
 
   background-color: $gray--200;
   padding-top: 80px;
-  padding-bottom: 114px;
+  padding-bottom: 300px;
 
   @media (max-width: 768px) {
     padding-top: size-768(80);
-    padding-bottom: size-768(114);
+    padding-bottom: size-768(300);
   }
 
   &__wrapper {

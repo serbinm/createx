@@ -140,6 +140,11 @@
     font-weight: 700;
     letter-spacing: 0.5px;
 
+    &:hover {
+      background-color: $orange--dark;
+      color: white;
+    }
+
     @media (max-width: 1230px) {
       font-size: size-1230(14);
       width: size-1230(160);

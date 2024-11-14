@@ -179,3 +179,86 @@
 </script>
 
 <!-- #endregion  -->
+
+
+
+<script>
+  const swiperCottageProjects = new Swiper('.projects-swiper', {
+    // slidesPerView: 3,
+    centeredSlides: true,
+    // Optional parameters
+    // slidesPerGroup: 2,
+    initialSlide: 1,
+    // slidesPerView: 2,
+
+    // loop: true,
+    // grabCursor: true,
+
+    // centeredSlides: true,
+    // initialSlide: 1,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+      },
+
+      1230: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    },
+    // Navigation arrows
+
+    navigation: {
+      nextEl: '.swiper-browse__next',
+      prevEl: '.swiper-browse__prev',
+    },
+
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+
+    // pagination: {
+    //   el: '.swiper-browse__pagination',
+    //   clickable: true,
+    //   renderBullet: function (index, className) {
+    //     // Рендерим цифры вместо точек
+    //     return '<span class="' + className + '">' + "0" + (index + 1) + '</span>';
+    //   }
+    // },
+  });
+</script>
+
+
+<!-- #region burger -->
+// Находим элементы
+<script>
+  // Находим элементы
+  const burgerOpen = document.querySelector('.header__open');
+  const burgerClose = document.querySelector('.burger__close');
+  const burgerMenu = document.querySelector('.burger');
+
+  function preventScroll(event) {
+    event.preventDefault();
+  }
+  // Открытие меню
+  burgerOpen.addEventListener('click', () => {
+    burgerMenu.classList.add('burger-active');
+    window.addEventListener('wheel', preventScroll, { passive: false }); // Отключаем прокрутку колесиком
+  });
+
+  // Закрытие меню
+  burgerClose.addEventListener('click', () => {
+    burgerMenu.classList.remove('burger-active');
+    burgerMenu.style.display = 'none'; // Скрываем кнопку закрытия
+    window.removeEventListener('wheel', preventScroll); // Включаем прокрутку колесиком
+  });
+
+</script>
+<!-- #endregion -->
