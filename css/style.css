@@ -3237,7 +3237,8 @@ h6 {
 }
 @media (max-width:1270px) {
   .wrapper {
-    padding: 0 20px
+    padding-left: 20px;
+    padding-right: 20px
   }
   .swiper-construction__buttons {
     padding: 0 20px
